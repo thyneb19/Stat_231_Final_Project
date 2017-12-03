@@ -1,0 +1,131 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+install.packages("magrittr")
+#install.packages("ggplot2")
+#install.packages("dplyr")
+install.packages("lubridate")
+install.packages("maps")
+install.packages("RJSONIO")
+library(RJSONIO)
+library(maps)
+library(lubridate)
+library(dplyr)
+library(magrittr)
+library(ggplot2)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r pressure, echo=FALSE}
+Stanford <- readxl::read_xlsx("Stanford_MSA_Database_for_release_06142016.xlsx")
+mass_shootings_2014 <- read.csv("Mass_shootings_2014_Locations.csv")
+mass_shootings_2015 <- read.csv("Mass_shootings_2015_Locations.csv")
+mass_shootings_2016 <- read.csv("Mass_shootings_2016_Locations.csv")
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+geocodeAdddress <- function(address,which) {
+  require(RJSONIO)
+  url <- "http://maps.google.com/maps/api/geocode/json?address="
+  url <- URLencode(paste(url, address, "&sensor=false", sep = ""))
+  x <- fromJSON(url, simplify = FALSE)
+  if (x$status == "OK") {
+    out <- c(x$results[[1]]$geometry$location$lng,
+             x$results[[1]]$geometry$location$lat)
+  } else {
+    out <- NA
+  }
+  Sys.sleep(0.2)  # API only allows 5 requests per second
+  if (which==0){
+    out[1]
+  }else{
+    out[2]
+  }
+}
+```
+
+
+```{r}
+mass2014 <- mutate(mass_shootings_2014,date = mdy(Incident.Date))
+mass2014 <- mutate(mass2014,week = week(date))
+mass2015 <- mutate(mass_shootings_2015,date = mdy(Incident.Date))
+mass2015 <- mutate(mass2015,week = week(date))
+mass2016 <- mutate(mass_shootings_2016,date = mdy(Incident.Date))
+mass2016 <- mutate(mass2016,week = week(date))
+
+#used to create latitude and longitude data using town address data
+#mass2014 <- mutate(mass2014,location = paste(City.Or.County,","," ",State))
+#mass2015 <- mutate(mass2015,location = paste(City.Or.County,","," ",State))
+#mass2016 <- mutate(mass2016,location = paste(City.Or.County,","," ",State))
+
+#mass2014loc <- mutate(mass2014,long=-10000,lat=-1000000)
+#mass2015loc <- mutate(mass2015,long=-10000,lat=-1000000)
+#mass2016loc <- mutate(mass2016,long=-10000,lat=-1000000)
+```
+
+```{r}
+#goes through dataset and converts an address into a latitude and longitude
+#for(i in 1:20){
+#  mass2015loc$long[i] <- geocodeAdddress(mass2015loc$location[i],0)
+#  mass2015loc$lat[i] <- geocodeAdddress(mass2015loc$location[i],1)
+#}
+```
+
+```{r}
+shootingFreq2014 <- mass2014 %>%
+  group_by(week) %>%
+  summarize(numShootings = n())
+
+mass2015 <- mutate(mass_shootings_2015,date = mdy(Incident.Date))
+mass2015 <- mutate(mass2015,week = week(date))
+shootingFreq2015 <- mass2015 %>%
+  group_by(week) %>%
+  summarize(numShootings = n())
+
+mass2016 <- mutate(mass_shootings_2016,date = mdy(Incident.Date))
+mass2016 <- mutate(mass2016,week = week(date))
+shootingFreq2016 <- mass2016 %>%
+  group_by(week) %>%
+  summarize(numShootings = n())
+
+massAll <- rbind(mass2014,mass2015,mass2016)
+
+massStanford <- mutate(Stanford[3:nrow(Stanford),],Date = as.integer(Date))
+massStanford <- mutate(massStanford,Date = as.Date(Date,origin="1900-01-01"))
+massStanfordPresent <- filter(massStanford,as.integer(substr(massStanford$Date,1,4))>=2014)
+massStanfordPresent <- mutate(massStanfordPresent,week=week(Date))
+```
+
+```{r}
+ggplot(shootingFreq2014,aes(week,numShootings))+geom_bar(stat="identity")
+ggplot(shootingFreq2015,aes(week,numShootings))+geom_bar(stat="identity")
+ggplot(shootingFreq2016,aes(week,numShootings))+geom_bar(stat="identity")
+
+onlyonMainland <- filter(Stanford,State != "Alaska" & State != "District of Columbia" & State != "Hawaii")
+
+map <- map_data("state")
+```
+
+```{r}
+gg1 <- ggplot() + 
+  geom_polygon(data = map, aes(x=long, y = lat, group = group), fill = "white", color = "blue") + 
+  coord_fixed(1.3)
+
+gg1 + geom_point(data=massStanfordPresent,aes(x=Longitude,y=Latitude,size=`Number of Victim Fatalities`,col=week)) + ggtitle("Mass Shootings Reported by Media")
+
+#gg1 + geom_point(data=mass2014,aes(x=long,y=lat,size=mass2014$X..Killed,color=mass2014$week))
+#gg1 + geom_point(data=mass2015,aes(x=long,y=lat,size=mass2015$X..Killed,color=mass2015$week))
+#gg1 + geom_point(data=mass2016,aes(x=long,y=lat,size=mass2016$X..Killed,color=mass2016$week))
+gg1 + geom_point(data=massAll,aes(x=long,y=lat,size=massAll$X..Killed,color=massAll$week)) + ggtitle("Mass Shootings Reported to Police")
+
+```
+
+
+

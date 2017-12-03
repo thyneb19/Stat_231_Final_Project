@@ -1,0 +1,334 @@
+"","Incident.Date","State","City.Or.County","Address","X..Killed","X..Injured","Operations","location","long","lat"
+"1","December 31, 2015","Louisiana","New Orleans","1900 block of Amelia Street",0,6,"N/A","New Orleans ,   Louisiana",-90.0715323,29.9510658
+"2","December 27, 2015","Tennessee","Jackson","North Parkway",0,4,"N/A","Jackson ,   Tennessee",-88.8139469,35.6145169
+"3","December 26, 2015","Pennsylvania","Philadelphia","4210 Macalester St",0,4,"N/A","Philadelphia ,   Pennsylvania",-75.1652215,39.9525839
+"4","December 25, 2015","Florida","Jacksonville","Franklin and Odessa",0,4,"N/A","Jacksonville ,   Florida",-81.655651,30.3321838
+"5","December 25, 2015","Alabama","Mobile","785 Schillinger Rd S",0,4,"N/A","Mobile ,   Alabama",-88.0398912,30.6953657
+"6","December 21, 2015","California","San Leandro","14600 block of East 14th Street",0,4,"N/A","San Leandro ,   California",-122.1560768,37.7249296
+"7","December 20, 2015","North Carolina","Wilmington","11th and Castle Street",1,4,"N/A","Wilmington ,   North Carolina",-77.9447102,34.2257255
+"8","December 20, 2015","Florida","Miami (Goulds)","21630 Southwest 120th Avenue",1,4,"N/A","Miami (Goulds) ,   Florida",-80.3822765,25.5626072
+"9","December 20, 2015","Florida","Miami-dade (county)","Northeast Seventh Avenue and Northeast 166th Street",0,4,"N/A","Miami-dade (county) ,   Florida",-80.6326916,25.5516034
+"10","December 14, 2015","Illinois","Lovejoy (Brooklyn)","307 Jefferson St",1,3,"N/A","Lovejoy (Brooklyn) ,   Illinois",-90.1644953,38.6598319
+"11","December 13, 2015","California","Los Angeles","5550 S. Flower Street",1,3,"N/A","Los Angeles ,   California",-118.2436849,34.0522342
+"12","December 13, 2015","California","Huntington Beach","17000 block of Keelson Lane",0,4,"N/A","Huntington Beach ,   California",-117.9988026,33.6594835
+"13","December 12, 2015","Georgia","Savannah","Whitaker Street",0,4,"N/A","Savannah ,   Georgia",-81.0998342,32.0835407
+"14","December 11, 2015","Maryland","Baltimore","5100 block of Park Heights Avenue",1,3,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"15","December 11, 2015","Pennsylvania","Pittsburgh (Mount Oliver)","200 block of  Brownsville Road",0,4,"N/A","Pittsburgh (Mount Oliver) ,   Pennsylvania",-79.9794161,40.4109925
+"16","December 8, 2015","Ohio","Cincinnati (Fairmount)","2300 block of Baltimore Avenue",1,3,"N/A","Cincinnati (Fairmount) ,   Ohio",-84.553555,39.127837
+"17","December 6, 2015","Louisiana","Raceland","Market Street",1,3,"N/A","Raceland ,   Louisiana",-90.5989759,29.7274331
+"18","December 6, 2015","Nebraska","Omaha","North 108th Street and Military Road",2,3,"N/A","Omaha ,   Nebraska",-95.9979883,41.2523634
+"19","December 2, 2015","California","San Bernardino","1365 South Waterman Avenue",16,19,"N/A","San Bernardino ,   California",-117.2897652,34.1083449
+"20","December 2, 2015","Georgia","Savannah","100 block of West 33rd Street",1,3,"N/A","Savannah ,   Georgia",-81.0998342,32.0835407
+"21","November 29, 2015","Illinois","Kankakee","648 E. Court St",0,5,"N/A","Kankakee ,   Illinois",-87.8611531,41.1200325
+"22","November 27, 2015","Colorado","Colorado Springs","3480 Centennial Blvd",3,9,"N/A","Colorado Springs ,   Colorado",-104.8213634,38.8338816
+"23","November 27, 2015","California","Sacramento","7900 block of Florin Road",2,2,"N/A","Sacramento ,   California",-121.4943996,38.5815719
+"24","November 24, 2015","South Carolina","Horry (county)","1321 Colletta Court",0,4,"N/A","Horry (county) ,   South Carolina",-78.9288242,33.9196567
+"25","November 23, 2015","Ohio","Columbus","90 block of S. Terrace Avenue",4,1,"N/A","Columbus ,   Ohio",-82.9987942,39.9611755
+"26","November 23, 2015","Minnesota","Minneapolis","Morgan Avenue North",0,5,"N/A","Minneapolis ,   Minnesota",-93.2650108,44.977753
+"27","November 22, 2015","Texas","Brownsville","1800 block of FM 802",0,4,"N/A","Brownsville ,   Texas",-97.4974838,25.9017472
+"28","November 22, 2015","Washington","Seattle","Broadway and Pike",0,4,"N/A","Seattle ,   Washington",-122.3320708,47.6062095
+"29","November 22, 2015","New York","Newburgh","203 Broadway",0,5,"N/A","Newburgh ,   New York",-74.0104178,41.5034271
+"30","November 22, 2015","South Carolina","North Charleston","Park Circle",1,3,"N/A","North Charleston ,   South Carolina",-79.9748103,32.8546197
+"31","November 22, 2015","Illinois","Chicago","4100 block of West Roosevelt",0,4,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"32","November 22, 2015","Louisiana","New Orleans","1900 block of Gallier Street",0,17,"N/A","New Orleans ,   Louisiana",-90.0715323,29.9510658
+"33","November 21, 2015","Maryland","Baltimore","Stricker and School",1,3,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"34","November 20, 2015","Pennsylvania","Pittsburgh","Prospect Drive",1,3,"N/A","Pittsburgh ,   Pennsylvania",-79.9958864,40.4406248
+"35","November 18, 2015","California","Fresno","California Avenue and Martin Luther King Jr. Boulevard",0,5,"N/A","Fresno ,   California",-119.7725868,36.7468422
+"36","November 16, 2015","Alabama","Cherokee (county)","1400 block of County Road 664",3,1,"N/A","Cherokee (county) ,   Alabama",-85.684578,34.1665322
+"37","November 15, 2015","Pennsylvania","Philadelphia","5600 block of Blakemore Street",0,4,"N/A","Philadelphia ,   Pennsylvania",-75.1652215,39.9525839
+"38","November 15, 2015","Texas","Tennessee Colony","800 block of County Road 2217",5,0,"N/A","Tennessee Colony ,   Texas",-95.8388504,31.8354447
+"39","November 14, 2015","Pennsylvania","Johnstown","1159 Main St",0,4,"N/A","Johnstown ,   Pennsylvania",-78.9219698,40.3267407
+"40","November 13, 2015","Florida","Jacksonville","1300 block of South Shirley Oaks Drive",4,1,"N/A","Jacksonville ,   Florida",-81.655651,30.3321838
+"41","November 9, 2015","Indiana","Indianapolis","400 block of North Beville Ave",2,2,"N/A","Indianapolis ,   Indiana",-86.158068,39.768403
+"42","November 8, 2015","Iowa","Des Moines","4397 NW 6th Drive",1,3,"N/A","Des Moines ,   Iowa",-93.6091064,41.6005448
+"43","November 8, 2015","Michigan","Warren","13859 8 Mile Road",0,4,"N/A","Warren ,   Michigan",-83.0146526,42.5144566
+"44","November 7, 2015","Colorado","Denver","Bayaud and Bannock",1,3,"N/A","Denver ,   Colorado",-104.990251,39.7392358
+"45","November 6, 2015","California","Bakersfield","1000 block of Feliz Drive",0,4,"N/A","Bakersfield ,   California",-119.0187125,35.3732921
+"46","November 3, 2015","Florida","Jacksonville","Ella Street and Kings Road",2,3,"N/A","Jacksonville ,   Florida",-81.655651,30.3321838
+"47","November 2, 2015","South Carolina","Pendleton","2217 Refuge Road",4,0,"N/A","Pendleton ,   South Carolina",-82.7837514,34.6517733
+"48","October 28, 2015","Louisiana","Houma","400 block of Morgan Street",1,3,"N/A","Houma ,   Louisiana",-90.7195348,29.5957696
+"49","October 27, 2015","Texas","Fort Worth","1700 block of Southcrest Drive",0,5,"N/A","Fort Worth ,   Texas",-97.3307658,32.7554883
+"50","October 26, 2015","Indiana","Evansville","711 E Virginia St",0,5,"N/A","Evansville ,   Indiana",-87.5710898,37.9715592
+"51","October 25, 2015","North Carolina","Four Oaks","2339 Stricklands Crossroads Road",0,5,"N/A","Four Oaks ,   North Carolina",-78.4269489,35.4448836
+"52","October 25, 2015","Arizona","Phoenix","Seventh Street and Broadway",1,4,"N/A","Phoenix ,   Arizona",-112.0740373,33.4483771
+"53","October 25, 2015","District of Columbia","Washington","4300 block of Wheeler Road SE",0,5,"N/A","Washington ,   District of Columbia",-77.0368707,38.9071923
+"54","October 24, 2015","South Carolina","Bamberg","682 Dixie Ave.",0,4,"N/A","Bamberg ,   South Carolina",-81.0348202,33.2971012
+"55","October 22, 2015","Tennessee","Nashville","3500 John A. Merritt Boulevard",1,3,"N/A","Nashville ,   Tennessee",-86.7816016,36.1626638
+"56","October 19, 2015","Illinois","Calumet City","300 Campbell Avenue",0,6,"N/A","Calumet City ,   Illinois",-87.5294871,41.6155909
+"57","October 18, 2015","Louisiana","New Orleans","2600 block of Caffin Avenue",0,4,"N/A","New Orleans ,   Louisiana",-90.0715323,29.9510658
+"58","October 17, 2015","Florida","Fort Myers","2224 First St",1,4,"N/A","Fort Myers ,   Florida",-81.8723084,26.640628
+"59","October 17, 2015","Indiana","Elkhart","160 Easy Shopping Place",0,4,"N/A","Elkhart ,   Indiana",-85.9766671,41.6819935
+"60","October 12, 2015","Georgia","Decatur","4731 Glenwood Road",0,4,"N/A","Decatur ,   Georgia",-84.2963123,33.7748275
+"61","October 10, 2015","Tennessee","Memphis","6135 Mount Moriah Road",0,6,"N/A","Memphis ,   Tennessee",-90.0489801,35.1495343
+"62","October 10, 2015","North Carolina","Charlotte","1900 block of West Boulevard",0,4,"N/A","Charlotte ,   North Carolina",-80.8431267,35.2270869
+"63","October 10, 2015","Illinois","Peoria","2405 North Flora",1,3,"N/A","Peoria ,   Illinois",-89.5889864,40.6936488
+"64","October 9, 2015","Arizona","Flagstaff","216 E Mountain View Drive",1,3,"N/A","Flagstaff ,   Arizona",-111.651302,35.1982836
+"65","October 6, 2015","Maryland","Baltimore","300 block of North Payson Street",0,5,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"66","October 2, 2015","Maryland","Baltimore","5400 Reisterstown Road",1,4,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"67","October 1, 2015","Oregon","Roseburg","1140 Umpqua College Rd",10,9,"N/A","Roseburg ,   Oregon",-123.3417381,43.216505
+"68","September 28, 2015","Ohio","Cincinnati (Evanston)","1800 block of Hewitt Avenue",0,5,"N/A","Cincinnati (Evanston) ,   Ohio",-84.47239,39.1405079
+"69","September 28, 2015","Illinois","Chicago","300 block of West 42nd Street",3,2,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"70","September 28, 2015","Illinois","Chicago","5300 block of South Aberdeen Street",2,3,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"71","September 28, 2015","Ohio","Dayton","1921 Oakridge",0,4,"N/A","Dayton ,   Ohio",-84.1916069,39.7589478
+"72","September 27, 2015","Georgia","Greenville","1140 Hill Haven Road",0,10,"N/A","Greenville ,   Georgia",-84.7129848,33.0287373
+"73","September 27, 2015","Illinois","Chicago","5200 block of South Justine",0,4,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"74","September 27, 2015","Missouri","Kansas City","1700 E. 18th St.",0,4,"N/A","Kansas City ,   Missouri",-94.5785667,39.0997265
+"75","September 25, 2015","Illinois","Danville","1300 block of May Street",0,4,"N/A","Danville ,   Illinois",-87.6300207,40.124481
+"76","September 24, 2015","Illinois","Chicago","5100 block of South Morgan Street",0,5,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"77","September 23, 2015","Louisiana","Shreveport","2900 block of Peach Street",0,5,"N/A","Shreveport ,   Louisiana",NA,NA
+"78","September 23, 2015","Florida","Fort Myers","Dale Street and Veronica S. Shoemaker Boulevard",0,4,"N/A","Fort Myers ,   Florida",-81.8723084,26.640628
+"79","September 23, 2015","Georgia","Norcross","1300 block of Reddington Lane",1,3,"N/A","Norcross ,   Georgia",-84.2135309,33.9412127
+"80","September 20, 2015","Pennsylvania","Philadelphia","900 block of Pratt Street",1,3,"N/A","Philadelphia ,   Pennsylvania",-75.1652215,39.9525839
+"81","September 20, 2015","Illinois","Chicago","5700 block of South LaSalle",1,5,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"82","September 20, 2015","Oklahoma","Tulsa","Pine and Yale",0,6,"N/A","Tulsa ,   Oklahoma",-95.992775,36.1539816
+"83","September 19, 2015","Indiana","Indianapolis","3900 block of Graceland Avenue",1,3,"N/A","Indianapolis ,   Indiana",-86.158068,39.768403
+"84","September 17, 2015","South Dakota","Geddes","36705 379th Street",6,0,"N/A","Geddes ,   South Dakota",-98.6953601,43.253604
+"85","September 17, 2015","Michigan","Albion","500 block of W. Broadwell Street",0,4,"N/A","Albion ,   Michigan",-84.7530304,42.243097
+"86","September 15, 2015","New Jersey","Newark","Irvine Turner Boulevard and West Kinney Street",0,4,"N/A","Newark ,   New Jersey",-74.1723667,40.735657
+"87","September 13, 2015","Florida","Ocala","1910 South Pine Avenue",1,5,"N/A","Ocala ,   Florida",-82.1400923,29.1871986
+"88","September 12, 2015","Louisiana","Shreveport","1500 block of Clanton Street",0,4,"N/A","Shreveport ,   Louisiana",-93.7501789,32.5251516
+"89","September 12, 2015","New York","Rochester","36 Woodward Street",2,4,"N/A","Rochester ,   New York",-77.6109219,43.16103
+"90","September 12, 2015","Minnesota","Minneapolis","1st Ave. and N. 5th St.",0,6,"N/A","Minneapolis ,   Minnesota",-93.2650108,44.977753
+"91","September 12, 2015","Minnesota","Minneapolis","1200 block of 22nd Ave. N.",1,3,"N/A","Minneapolis ,   Minnesota",-93.2650108,44.977753
+"92","September 11, 2015","North Carolina","Charlotte","1000 North Carolina Music Factory Blvd.",0,5,"N/A","Charlotte ,   North Carolina",NA,NA
+"93","September 10, 2015","Minnesota","Excelsior (Greenwood)","Channel Drive",5,0,"N/A","Excelsior (Greenwood) ,   Minnesota",-93.55048,44.9025615
+"94","September 8, 2015","Georgia","Berlin","N/A",0,4,"N/A","Berlin ,   Georgia",-83.623778,31.0682441
+"95","September 8, 2015","Illinois","Chicago","56th and Green",0,4,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"96","September 7, 2015","Indiana","Gary","9300 block of Sunrise",2,4,"N/A","Gary ,   Indiana",-87.3464271,41.5933696
+"97","September 7, 2015","Colorado","Denver","1909 Blake Street",0,4,"N/A","Denver ,   Colorado",-104.990251,39.7392358
+"98","September 5, 2015","North Carolina","Charlotte","6800 block of Fieldvale Place",1,3,"N/A","Charlotte ,   North Carolina",-80.8431267,35.2270869
+"99","September 5, 2015","Florida","Daytona Beach","300 block of Pearl Street",0,4,"N/A","Daytona Beach ,   Florida",NA,NA
+"100","September 5, 2015","Nevada","Las Vegas","5000 block of Hollywood Boulevard",1,3,"N/A","Las Vegas ,   Nevada",-115.1398296,36.1699412
+"101","September 5, 2015","Missouri","Columbia","1509 Ashley Street",0,4,"N/A","Columbia ,   Missouri",-92.3340724,38.9517053
+"102","August 30, 2015","Tennessee","Memphis","3300 block of Sobota Circle",1,4,"N/A","Memphis ,   Tennessee",-90.0489801,35.1495343
+"103","August 29, 2015","Tennessee","Bristol","618 Henson Road",3,2,"N/A","Bristol ,   Tennessee",-82.1887444,36.5951059
+"104","August 29, 2015","Texas","Tyler","638 ENE Loop 323",1,3,"N/A","Tyler ,   Texas",-95.3010624,32.3512601
+"105","August 28, 2015","New York","Brooklyn","589 Flatbush Avenue",1,3,"N/A","Brooklyn ,   New York",-73.9441579,40.6781784
+"106","August 27, 2015","California","Salinas","928 Blanco Circle",2,2,"N/A","Salinas ,   California",-121.6555013,36.6777372
+"107","August 26, 2015","Illinois","Chicago","3025 W. Van Buren Ave",2,2,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"108","August 26, 2015","Minnesota","Minneapolis (Brooklyn Center)","5000 block of Drew Avenue North",0,4,"N/A","Minneapolis (Brooklyn Center) ,   Minnesota",NA,NA
+"109","August 26, 2015","Florida","West Palm Beach","800 block of 19th Street",2,2,"N/A","West Palm Beach ,   Florida",-80.0533746,26.7153424
+"110","August 25, 2015","Louisiana","New Orleans","Fern Street and Olive Street",1,3,"N/A","New Orleans ,   Louisiana",-90.0715323,29.9510658
+"111","August 23, 2015","California","Modesto","1100 block of Kansas Avenue",1,7,"N/A","Modesto ,   California",-120.9968782,37.6390972
+"112","August 22, 2015","Florida","Orlando (Pine Hills)","State Road 408",0,4,"N/A","Orlando (Pine Hills) ,   Florida",-81.4534046,28.5577794
+"113","August 22, 2015","New Mexico","Roswell","302 East Reed Street",3,1,"N/A","Roswell ,   New Mexico",-104.5230242,33.3942655
+"114","August 21, 2015","North Carolina","Durham","2700 block of Hinson Drive",0,8,"N/A","Durham ,   North Carolina",-78.898619,35.9940329
+"115","August 21, 2015","Ohio","Cincinnati","Mathis and Prentice",2,5,"N/A","Cincinnati ,   Ohio",-84.5120196,39.1031182
+"116","August 20, 2015","Texas","Grulla (La Grulla)","FM 2360",2,2,"N/A","Grulla (La Grulla) ,   Texas",-98.6487147,26.271624
+"117","August 19, 2015","New York","Rochester","500 Genesee Street",3,4,"N/A","Rochester ,   New York",-77.6109219,43.16103
+"118","August 16, 2015","Texas","Fort Worth","3651 Sycamore School Rd",0,6,"N/A","Fort Worth ,   Texas",-97.3307658,32.7554883
+"119","August 16, 2015","Illinois","Chicago","5400 block of West Division Street",0,4,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"120","August 16, 2015","South Carolina","Bennettsville","Highway 38N",0,5,"N/A","Bennettsville ,   South Carolina",-79.6847814,34.6173803
+"121","August 15, 2015","Pennsylvania","Pittsburgh","West Prospect Avenue",1,3,"N/A","Pittsburgh ,   Pennsylvania",-79.9958864,40.4406248
+"122","August 15, 2015","California","Los Angeles","57th Street and South Normandie Avenue",0,4,"N/A","Los Angeles ,   California",-118.2436849,34.0522342
+"123","August 15, 2015","South Carolina","Orangeburg","2868 Bamberg Road",1,3,"N/A","Orangeburg ,   South Carolina",-80.8556476,33.4918203
+"124","August 10, 2015","California","Long Beach","1700 block of East 10th Street",0,4,"N/A","Long Beach ,   California",-118.1937395,33.7700504
+"125","August 9, 2015","Mississippi","Forest","Poplar Street",1,3,"N/A","Forest ,   Mississippi",-89.4742348,32.3645888
+"126","August 9, 2015","Michigan","Detroit","15200 block of Hazelridge",1,3,"N/A","Detroit ,   Michigan",-83.0457538,42.331427
+"127","August 9, 2015","Missouri","Kansas City","40th Street and Pennsylvania Avenue",0,4,"N/A","Kansas City ,   Missouri",-94.5785667,39.0997265
+"128","August 8, 2015","North Carolina","Gastonia","4908 Greenwood Drive",2,3,"N/A","Gastonia ,   North Carolina",-81.1873005,35.262082
+"129","August 8, 2015","Arkansas","Blytheville","833 Anderson Street",1,11,"N/A","Blytheville ,   Arkansas",-89.9189753,35.9272953
+"130","August 8, 2015","Texas","Houston","2211 Falling Oaks",8,0,"N/A","Houston ,   Texas",-95.3698028,29.7604267
+"131","August 7, 2015","Vermont","Barre (Berlin)","3182 Airport Road",4,0,"N/A","Barre (Berlin) ,   Vermont",-72.5591452,44.2156525
+"132","August 6, 2015","South Carolina","Columbia","1505 Garden Plaza",0,4,"N/A","Columbia ,   South Carolina",-81.0348144,34.0007104
+"133","August 4, 2015","Missouri","Saint Louis","2500 block of Semple",1,4,"N/A","Saint Louis ,   Missouri",-90.1994042,38.6270025
+"134","August 3, 2015","New York","Brooklyn","98 Dwight Street",0,5,"N/A","Brooklyn ,   New York",-73.9441579,40.6781784
+"135","August 2, 2015","New York","Brooklyn","Stanley Avenue and Crescent Street",0,9,"N/A","Brooklyn ,   New York",-73.9441579,40.6781784
+"136","August 2, 2015","Maryland","Baltimore","2700 block of Garrison Avenue",0,7,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"137","August 2, 2015","Illinois","Chicago","4800 block of West Kamerling Avenue",1,4,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"138","August 2, 2015","Georgia","Savannah","Barnard Street",0,5,"N/A","Savannah ,   Georgia",-81.0998342,32.0835407
+"139","August 2, 2015","Illinois","Chicago","6700 block of South Winchester Avenue",0,4,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"140","August 1, 2015","Florida","Orlando","5801 Shenandoah Way",0,4,"N/A","Orlando ,   Florida",-81.3792365,28.5383355
+"141","July 30, 2015","Pennsylvania","Pittsburgh","Brushton Avenue",0,4,"N/A","Pittsburgh ,   Pennsylvania",-79.9958864,40.4406248
+"142","July 27, 2015","Illinois","Rockford","900 block of Kent Street",0,5,"N/A","Rockford ,   Illinois",-89.0939952,42.2711311
+"143","July 26, 2015","Missouri","Kansas City","Thompson and Colorado",2,3,"N/A","Kansas City ,   Missouri",-94.5785667,39.0997265
+"144","July 26, 2015","Louisiana","New Orleans","Piety and Treasure street",0,4,"N/A","New Orleans ,   Louisiana",-90.0715323,29.9510658
+"145","July 25, 2015","Virginia","Hopewell","500 block of N. 7th Ave",0,4,"N/A","Hopewell ,   Virginia",-77.2872001,37.3043154
+"146","July 24, 2015","Pennsylvania","Erie","200 block of West 29th Street",2,4,"N/A","Erie ,   Pennsylvania",-80.085059,42.1292241
+"147","July 23, 2015","Louisiana","Lafayette","3141 Johnson Street",3,9,"N/A","Lafayette ,   Louisiana",-92.0198427,30.2240897
+"148","July 22, 2015","Georgia","Suwanee","5500 block of Old Atlanta Road",5,0,"N/A","Suwanee ,   Georgia",-84.0712997,34.0514898
+"149","July 21, 2015","Florida","Miami Gardens","Northwest 25th Avenue and Miami Gardens Drive",1,3,"N/A","Miami Gardens ,   Florida",-80.2456045,25.9420377
+"150","July 20, 2015","New York","Bronx","E. 153rd St. and the Grand Concourse",0,6,"N/A","Bronx ,   New York",-73.8648268,40.8447819
+"151","July 19, 2015","Virginia","Suffolk","100 block of North Capitol Street",0,4,"N/A","Suffolk ,   Virginia",-76.5835621,36.7282054
+"152","July 19, 2015","Kentucky","Louisville","2928 W Kentucky St",0,6,"N/A","Louisville ,   Kentucky",-85.7584557,38.2526647
+"153","July 19, 2015","North Carolina","Rocky Mount","Interstate 64 and Raliegh Street",0,4,"N/A","Rocky Mount ,   North Carolina",-77.7905339,35.9382103
+"154","July 18, 2015","California","San Diego","200 block of South Bancroft Street",0,4,"N/A","San Diego ,   California",-117.1610838,32.715738
+"155","July 18, 2015","California","Santa Paula","Ojai-Santa Paula Street",0,5,"N/A","Santa Paula ,   California",-119.0592705,34.3541659
+"156","July 18, 2015","Oregon","Salem","1550 Weston Ct NE",1,4,"N/A","Salem ,   Oregon",-123.0350963,44.9428975
+"157","July 18, 2015","Louisiana","Baton Rouge","300 block of Brice Street",2,2,"N/A","Baton Rouge ,   Louisiana",-91.1403196,30.4582829
+"158","July 17, 2015","Illinois","Chicago","4400 block of W. Maypole",0,5,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"159","July 17, 2015","Ohio","Cincinnati (Westwood)","3100 block of Sunshine Avenue",0,4,"N/A","Cincinnati (Westwood) ,   Ohio",-84.5903367,39.1486303
+"160","July 16, 2015","Tennessee","Chattanooga","4051 Amnicola Highway",6,2,"N/A","Chattanooga ,   Tennessee",-85.3096801,35.0456297
+"161","July 16, 2015","Texas","Dallas","Singleton and Hampton",0,5,"N/A","Dallas ,   Texas",-96.7969879,32.7766642
+"162","July 15, 2015","Georgia","Atlanta","500 block of Center Hill Avenue",0,5,"N/A","Atlanta ,   Georgia",-84.3879824,33.7489954
+"163","July 15, 2015","Maryland","Baltimore","3500 block of West Garrison Boulevard",1,3,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"164","July 15, 2015","Ohio","Cleveland","700 block of Thornhill",0,7,"N/A","Cleveland ,   Ohio",-81.6943605,41.49932
+"165","July 15, 2015","Michigan","Detroit","9200 block of Memorial",0,4,"N/A","Detroit ,   Michigan",-83.0457538,42.331427
+"166","July 15, 2015","South Carolina","Holly Hill","7050 Old State Road",4,1,"N/A","Holly Hill ,   South Carolina",-80.4137037,33.3226624
+"167","July 14, 2015","Missouri","Saint Louis","1100 block of Riverview",0,4,"N/A","Saint Louis ,   Missouri",-90.1994042,38.6270025
+"168","July 13, 2015","California","Norwalk","11959 162nd Street",0,4,"N/A","Norwalk ,   California",-118.081733,33.9022367
+"169","July 13, 2015","California","Stockton","400 block of McCloud Avenue",1,4,"N/A","Stockton ,   California",-121.2907796,37.9577016
+"170","July 12, 2015","Illinois","River Forest","116 Lathrop Avenue",2,3,"N/A","River Forest ,   Illinois",-87.8139483,41.8978091
+"171","July 12, 2015","New Jersey","Jersey City","Sip and Van Wagenen avenues",0,4,"N/A","Jersey City ,   New Jersey",-74.0776417,40.7281575
+"172","July 7, 2015","Ohio","Cleveland","East 162nd Street and Miles Avenue",1,3,"N/A","Cleveland ,   Ohio",-81.6943605,41.49932
+"173","July 7, 2015","Maryland","Baltimore","900 block of West Fayette Street",3,1,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"174","July 5, 2015","Louisiana","Shreveport","3500 block of Hearne Avenue",0,8,"N/A","Shreveport ,   Louisiana",-93.7501789,32.5251516
+"175","July 5, 2015","Indiana","Fort Wayne","1400 block of McCulloch Street",0,9,"N/A","Fort Wayne ,   Indiana",-85.1393513,41.079273
+"176","July 5, 2015","New Jersey","East Orange","200 block of S. Clinton St",1,3,"N/A","East Orange ,   New Jersey",-74.2048677,40.767323
+"177","July 4, 2015","District of Columbia","Washington","2600 Douglas Place SE",1,3,"N/A","Washington ,   District of Columbia",-77.0368707,38.9071923
+"178","July 4, 2015","Kentucky","Louisville","2500 block of West Broadway",0,4,"N/A","Louisville ,   Kentucky",-85.7584557,38.2526647
+"179","July 4, 2015","Massachusetts","Pittsfield","Dewey Avenue",1,4,"N/A","Pittsfield ,   Massachusetts",-73.2453824,42.4500845
+"180","July 4, 2015","New York","Syracuse","Bellevue and Rich Street",0,4,"N/A","Syracuse ,   New York",-76.1474244,43.0481221
+"181","July 4, 2015","Texas","San Antonio","1100 block of West Avenue",0,4,"N/A","San Antonio ,   Texas",-98.4936282,29.4241219
+"182","July 2, 2015","Indiana","Indianapolis","Lynn and Michigan",1,3,"N/A","Indianapolis ,   Indiana",-86.158068,39.768403
+"183","June 29, 2015","Florida","Opa Locka","13450 N.W. 30th Ave",0,4,"N/A","Opa Locka ,   Florida",-80.2503271,25.9023168
+"184","June 28, 2015","Michigan","Detroit","Gratiot and Loretto",0,5,"N/A","Detroit ,   Michigan",-83.0457538,42.331427
+"185","June 28, 2015","Illinois","Venice","N/A",0,6,"N/A","Venice ,   Illinois",-90.169832,38.6722727
+"186","June 28, 2015","Delaware","Harrington","100 block of East St",0,6,"N/A","Harrington ,   Delaware",-75.5777033,38.9237244
+"187","June 27, 2015","Massachusetts","Taunton","Weir Street",1,3,"N/A","Taunton ,   Massachusetts",-71.0897674,41.900101
+"188","June 27, 2015","Michigan","Detroit","Stringham Court",0,4,"N/A","Detroit ,   Michigan",-83.0457538,42.331427
+"189","June 24, 2015","New York","New York (Manhattan)","2110 Madison Ave",0,4,"N/A","New York (Manhattan) ,   New York",-73.9712488,40.7830603
+"190","June 22, 2015","Pennsylvania","Philadelphia","700 block of East Hilton Street",0,7,"N/A","Philadelphia ,   Pennsylvania",-75.1652215,39.9525839
+"191","June 21, 2015","Pennsylvania","Pittsburgh (Wilkinsburg)","Rebecca and East Swissvale Avenue",0,4,"N/A","Pittsburgh (Wilkinsburg) ,   Pennsylvania",-79.8858507,40.4433488
+"192","June 21, 2015","Kentucky","Lexington","726 Georgetown St",1,4,"N/A","Lexington ,   Kentucky",-84.5037164,38.0405837
+"193","June 20, 2015","Michigan","Detroit","Dexter and Webb",1,11,"N/A","Detroit ,   Michigan",-83.0457538,42.331427
+"194","June 20, 2015","North Carolina","Morven","N/A",0,4,"N/A","Morven ,   North Carolina",-80.0011724,34.8640437
+"195","June 20, 2015","Pennsylvania","Philadelphia","4100 block of Ogden Street",0,11,"N/A","Philadelphia ,   Pennsylvania",-75.1652215,39.9525839
+"196","June 19, 2015","Rhode Island","Woonsocket","80 River Street",0,4,"N/A","Woonsocket ,   Rhode Island",-71.5147839,42.0028761
+"197","June 17, 2015","South Carolina","Charleston","110 Calhoun Street",9,0,"N/A","Charleston ,   South Carolina",-79.9310512,32.7764749
+"198","June 16, 2015","Florida","Miami Gardens","600 block of Northwest 177th Street",0,4,"N/A","Miami Gardens ,   Florida",-80.2456045,25.9420377
+"199","June 15, 2015","New York","Brooklyn","673 Flatbush Avenue",0,4,"N/A","Brooklyn ,   New York",-73.9441579,40.6781784
+"200","June 14, 2015","New Jersey","Camden","2800 block of Mitchell Street",1,3,"N/A","Camden ,   New Jersey",-75.1196199,39.9259463
+"201","June 14, 2015","Oklahoma","Tulsa","1800 block of North Kingston",0,4,"N/A","Tulsa ,   Oklahoma",-95.992775,36.1539816
+"202","June 14, 2015","Missouri","Saint Louis","1400 block of North Market Street",0,4,"N/A","Saint Louis ,   Missouri",-90.1994042,38.6270025
+"203","June 13, 2015","Georgia","Fayetteville","600 block of Highway 279",1,4,"N/A","Fayetteville ,   Georgia",-84.4549262,33.4487257
+"204","June 13, 2015","Ohio","Columbus","1623 E. Hudson Street",4,1,"N/A","Columbus ,   Ohio",-82.9987942,39.9611755
+"205","June 13, 2015","Georgia","Milledgeville","451 North Flynn Street",1,3,"N/A","Milledgeville ,   Georgia",-83.2320991,33.0801429
+"206","June 13, 2015","New York","Bronx","2409 Creston Avenue",0,5,"N/A","Bronx ,   New York",-73.8648268,40.8447819
+"207","June 13, 2015","Oklahoma","Oklahoma City","500 block of Se 69th St",0,4,"N/A","Oklahoma City ,   Oklahoma",-97.5164276,35.4675602
+"208","June 12, 2015","Florida","Allapattah","24th Avenue and 36th Street",0,4,"N/A","Allapattah ,   Florida",-80.2265545,25.8003154
+"209","June 11, 2015","Connecticut","Bridgeport","468 Trumbull Avenue",1,8,"N/A","Bridgeport ,   Connecticut",-73.1951767,41.1865478
+"210","June 11, 2015","Texas","Houston","3400 block of Burkett",1,3,"N/A","Houston ,   Texas",-95.3698028,29.7604267
+"211","June 10, 2015","California","Los Angeles","South Vermont Avenue and West 88th Street",1,3,"N/A","Los Angeles ,   California",-118.2436849,34.0522342
+"212","June 9, 2015","Missouri","Saint Louis","North Market Street and North Spring Avenue",1,3,"N/A","Saint Louis ,   Missouri",-90.1994042,38.6270025
+"213","June 7, 2015","Montana","Deer Lodge","Boulder Creek Road",5,0,"N/A","Deer Lodge ,   Montana",-112.7383721,46.3990941
+"214","June 6, 2015","New York","Buffalo","100 block of Warren Avenue",1,4,"N/A","Buffalo ,   New York",-78.8783689,42.8864468
+"215","June 6, 2015","Illinois","Chicago","100 block of North Lorel Avenue",0,5,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"216","June 5, 2015","Iowa","Davenport","900 block of West 3rd St",0,5,"N/A","Davenport ,   Iowa",-90.5776367,41.5236437
+"217","June 5, 2015","Louisiana","New Orleans","2100 block of Governor Nicholls Street",1,3,"N/A","New Orleans ,   Louisiana",-90.0715323,29.9510658
+"218","June 3, 2015","New York","Wyandanch","Davidson Street",3,1,"N/A","Wyandanch ,   New York",-73.360398,40.7539878
+"219","May 31, 2015","Ohio","Cleveland","16209 block of Laverne Avenue",3,1,"N/A","Cleveland ,   Ohio",-81.6943605,41.49932
+"220","May 31, 2015","Maryland","Springdale","9222 Ardwick Ardmore Road",1,3,"N/A","Springdale ,   Maryland",-76.8388602,38.9376113
+"221","May 31, 2015","Connecticut","New Haven","849 Chapel Street",0,5,"N/A","New Haven ,   Connecticut",-72.9278835,41.308274
+"222","May 31, 2015","Georgia","Conyers","4669 Bell Road SE",3,2,"N/A","Conyers ,   Georgia",-84.0176904,33.6676103
+"223","May 30, 2015","California","San Diego","4200 block of Market Street",0,4,"N/A","San Diego ,   California",-117.1610838,32.715738
+"224","May 28, 2015","Nebraska","Omaha","84th and Q",0,4,"N/A","Omaha ,   Nebraska",-95.9979883,41.2523634
+"225","May 28, 2015","Illinois","Chicago","6200 block of South Honore Street",0,5,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"226","May 28, 2015","Pennsylvania","Chester","2700 block of West 3rd Street",1,3,"N/A","Chester ,   Pennsylvania",-75.3557457,39.849557
+"227","May 26, 2015","Louisiana","New Orleans","6700 block of Tara Lane",2,2,"N/A","New Orleans ,   Louisiana",-90.0715323,29.9510658
+"228","May 25, 2015","Illinois","Decatur","1816 N. Water",1,4,"N/A","Decatur ,   Illinois",-88.9548001,39.8403147
+"229","May 24, 2015","Michigan","Flint","W. 12th Street and Hammerberg Road.",0,7,"N/A","Flint ,   Michigan",-83.6874562,43.0125274
+"230","May 24, 2015","Massachusetts","Brockton","1002 Main St",0,5,"N/A","Brockton ,   Massachusetts",-71.0183787,42.0834335
+"231","May 24, 2015","Alabama","Montgomery","Smiley Court",1,3,"N/A","Montgomery ,   Alabama",-86.2999689,32.3668052
+"232","May 24, 2015","Missouri","Saint Louis","2700 block of Dayton",0,4,"N/A","Saint Louis ,   Missouri",-90.1994042,38.6270025
+"233","May 23, 2015","California","Fresno","2400 block of South 9th Street",2,2,"N/A","Fresno ,   California",-119.7725868,36.7468422
+"234","May 20, 2015","Maryland","Baltimore","800 block of Linwood Avenue",1,4,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"235","May 18, 2015","Missouri","Kinloch","8000 block of School Way",0,4,"N/A","Kinloch ,   Missouri",-90.3253922,38.7406065
+"236","May 18, 2015","Florida","Miami","Northwest 75th Street and Northwest 16th Avenue",1,4,"N/A","Miami ,   Florida",-80.1917902,25.7616798
+"237","May 17, 2015","Texas","Waco","4671 S Jack Kultgen Expy",9,18,"N/A","Waco ,   Texas",-97.1466695,31.549333
+"238","May 16, 2015","Wisconsin","Milwaukee","28th Street and Auer Avenue",0,5,"N/A","Milwaukee ,   Wisconsin",-87.9064736,43.0389025
+"239","May 16, 2015","New York","Rochester","188 Lewis Street",0,4,"N/A","Rochester ,   New York",-77.6109219,43.16103
+"240","May 16, 2015","Maryland","Baltimore","1700 block of North Broadway",0,5,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"241","May 12, 2015","Maryland","Capitol Heights","Pard Road",1,4,"N/A","Capitol Heights ,   Maryland",-76.9158068,38.8851122
+"242","May 12, 2015","Arizona","Tucson","800 block of West Calle Medina Road",5,0,"N/A","Tucson ,   Arizona",-110.926479,32.2217429
+"243","May 10, 2015","Ohio","Cleveland","3600 block of Bosworth Road",1,4,"N/A","Cleveland ,   Ohio",-81.6943605,41.49932
+"244","May 10, 2015","New Jersey","Jersey City","Bostwick Avenue",0,4,"N/A","Jersey City ,   New Jersey",-74.0776417,40.7281575
+"245","May 10, 2015","New Jersey","Newark","19th Avenue and South 16th Street",1,3,"N/A","Newark ,   New Jersey",-74.1723667,40.735657
+"246","May 7, 2015","Michigan","Detroit","16000 block of Cathedral Street",0,4,"N/A","Detroit ,   Michigan",-83.0457538,42.331427
+"247","May 7, 2015","Ohio","Cincinnati","2300 block of Baltimore Avenue",0,4,"N/A","Cincinnati ,   Ohio",-84.5120196,39.1031182
+"248","May 4, 2015","New York","Buffalo","100 block of Roosevelt Avenue",1,3,"N/A","Buffalo ,   New York",-78.8783689,42.8864468
+"249","May 3, 2015","Indiana","South Bend","1600 block of South William Street",0,4,"N/A","South Bend ,   Indiana",-86.2519898,41.6763545
+"250","May 3, 2015","Wisconsin","Menasha","North Lake Street",4,1,"N/A","Menasha ,   Wisconsin",-88.4464973,44.2022084
+"251","May 3, 2015","Texas","Houston","San Jacinto at Elgin",0,6,"N/A","Houston ,   Texas",-95.3698028,29.7604267
+"252","May 3, 2015","New York","Bronx","University Avenue",0,4,"N/A","Bronx ,   New York",-73.8648268,40.8447819
+"253","May 3, 2015","Ohio","Dayton","2801 Germantown Street",1,6,"N/A","Dayton ,   Ohio",-84.1916069,39.7589478
+"254","May 1, 2015","Wisconsin","Milwaukee","3700 block of 37th Street",2,3,"N/A","Milwaukee ,   Wisconsin",-87.9064736,43.0389025
+"255","April 27, 2015","New York","Brooklyn","1365 Flatbush Ave",2,4,"N/A","Brooklyn ,   New York",-73.9441579,40.6781784
+"256","April 27, 2015","Arizona","Gila Bend","State Route 85",2,2,"N/A","Gila Bend ,   Arizona",-112.7168305,32.9478236
+"257","April 25, 2015","New Jersey","Trenton","Wood Street",0,4,"N/A","Trenton ,   New Jersey",-74.7429384,40.2170534
+"258","April 25, 2015","New York","Gates","24 Hinchey Rd",1,6,"N/A","Gates ,   New York",-77.7223162,43.1480944
+"259","April 21, 2015","Texas","Killeen","420 Gilmer St.",2,3,"N/A","Killeen ,   Texas",-97.7277959,31.1171194
+"260","April 19, 2015","Virginia","Richmond","200 block of West Hill Street",0,4,"N/A","Richmond ,   Virginia",-77.4360481,37.5407246
+"261","April 18, 2015","Alabama","Montgomery","1800 block of Gibbs Court",0,5,"N/A","Montgomery ,   Alabama",-86.2999689,32.3668052
+"262","April 18, 2015","Pennsylvania","Williamsport","321 Pine St",0,5,"N/A","Williamsport ,   Pennsylvania",-77.0010786,41.2411897
+"263","April 18, 2015","North Carolina","Lumberton","Martin Luther King Drive",1,3,"N/A","Lumberton ,   North Carolina",-79.0086424,34.6182199
+"264","April 18, 2015","North Carolina","Charlotte","Bost Street",0,4,"N/A","Charlotte ,   North Carolina",-80.8431267,35.2270869
+"265","April 18, 2015","New Jersey","Paterson","Rosa Parks Blvd and Godwin Ave",1,3,"N/A","Paterson ,   New Jersey",-74.171811,40.9167654
+"266","April 16, 2015","Arizona","Phoenix","4300 block of East Anderson Drive",5,0,"N/A","Phoenix ,   Arizona",-112.0740373,33.4483771
+"267","April 7, 2015","Georgia","Rome","20 Copeland Street",1,3,"N/A","Rome ,   Georgia",-85.1646726,34.257038
+"268","April 5, 2015","Pennsylvania","Pittsburgh","Dinwiddie Street",1,3,"N/A","Pittsburgh ,   Pennsylvania",-79.9958864,40.4406248
+"269","April 5, 2015","Kentucky","Louisville","40th and Grand Street",1,4,"N/A","Louisville ,   Kentucky",-85.7584557,38.2526647
+"270","April 5, 2015","Indiana","Indianapolis","5000 block of Wildflower Court",0,5,"N/A","Indianapolis ,   Indiana",-86.158068,39.768403
+"271","April 5, 2015","Michigan","Benton Harbor","1000 block of Blossom Lane",0,4,"N/A","Benton Harbor ,   Michigan",-86.4541894,42.1167065
+"272","April 3, 2015","Florida","Daytona Beach","300 block of Henry Butts Drive",0,4,"N/A","Daytona Beach ,   Florida",-81.0228331,29.2108147
+"273","April 2, 2015","Maryland","Baltimore","1900 block of West Lanvale Street",0,5,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"274","March 27, 2015","Florida","Panama City Beach","5312 Thomas Drive",0,7,"N/A","Panama City Beach ,   Florida",-85.8054879,30.1765914
+"275","March 26, 2015","Texas","Amarillo","3100 block of Redwood",0,4,"N/A","Amarillo ,   Texas",-101.8312969,35.2219971
+"276","March 24, 2015","Indiana","Indianapolis","3100 block of North Harding Street",4,0,"N/A","Indianapolis ,   Indiana",NA,NA
+"277","March 23, 2015","Tennessee","Clarksville","900 block of Carpenter Street",1,4,"N/A","Clarksville ,   Tennessee",-87.3594528,36.5297706
+"278","March 22, 2015","New Mexico","Albuquerque","10140 Lomas NE",1,6,"N/A","Albuquerque ,   New Mexico",-106.6055534,35.0853336
+"279","March 21, 2015","Florida","Tampa","1802 Seventh Ave",0,4,"N/A","Tampa ,   Florida",-82.4571776,27.950575
+"280","March 20, 2015","Texas","Lancaster","1500 block of Reynolds Street",1,5,"N/A","Lancaster ,   Texas",-96.7561082,32.5920798
+"281","March 18, 2015","New Jersey","Newark","200 block of Clinton Place",1,3,"N/A","Newark ,   New Jersey",-74.1723667,40.735657
+"282","March 18, 2015","Arizona","Mesa","1504 West Main Street",1,5,"N/A","Mesa ,   Arizona",-111.8314724,33.4151843
+"283","March 17, 2015","California","Stockton","748 N Madison St",3,4,"N/A","Stockton ,   California",-121.2907796,37.9577016
+"284","March 15, 2015","California","Compton","2700 block of West Alondra Boulevard",0,4,"N/A","Compton ,   California",-118.2200712,33.8958492
+"285","March 14, 2015","Georgia","Atlanta","2900 block of Delmar Lane",0,5,"N/A","Atlanta ,   Georgia",-84.3879824,33.7489954
+"286","March 14, 2015","California","Coachella","84000 block of Bagdad Avenue",0,4,"N/A","Coachella ,   California",-116.173894,33.6803003
+"287","March 13, 2015","Mississippi","Brookhaven","1097 South First St.",2,3,"N/A","Brookhaven ,   Mississippi",-90.4406506,31.5790588
+"288","March 10, 2015","Georgia","Columbus","3023 Victory Drive",0,5,"N/A","Columbus ,   Georgia",-84.9877094,32.4609764
+"289","March 9, 2015","Illinois","Chicago","200 block of West 105th",1,3,"N/A","Chicago ,   Illinois",-87.6297982,41.8781136
+"290","March 8, 2015","South Carolina","Seneca","Wells Highway",1,3,"N/A","Seneca ,   South Carolina",-82.9532036,34.6856555
+"291","March 4, 2015","California","San Bernardino","190 block of West Club Center Drive",2,5,"N/A","San Bernardino ,   California",-117.2897652,34.1083449
+"292","March 1, 2015","Florida","Orange County","4900 block of Steyr Street",0,4,"N/A","Orange County ,   Florida",-81.2518833,28.4844995
+"293","March 1, 2015","Michigan","Detroit","9855 Chalmers St",1,5,"N/A","Detroit ,   Michigan",-83.0457538,42.331427
+"294","February 28, 2015","Maryland","Baltimore","4300 block of Welbourne Road",1,3,"N/A","Baltimore ,   Maryland",-76.6121893,39.2903848
+"295","February 26, 2015","Missouri","Tyrone","18279 Highway H",8,1,"N/A","Tyrone ,   Missouri",-91.8699049,37.2003245
+"296","February 25, 2015","Texas","Houston","Mallow St.",3,3,"N/A","Houston ,   Texas",-95.3698028,29.7604267
+"297","February 23, 2015","Florida","Daytona Beach","Sheridan Road",0,4,"N/A","Daytona Beach ,   Florida",-81.0228331,29.2108147
+"298","February 22, 2015","Texas","Killeen","1706 Godman St.",4,1,"N/A","Killeen ,   Texas",-97.7277959,31.1171194
+"299","February 22, 2015","Georgia","Clarkesville","281 Lower Pond Court",3,2,"N/A","Clarkesville ,   Georgia",-83.5248933,34.6125971
+"300","February 22, 2015","South Carolina","Charleston","4224 Dorchester Road",0,4,"N/A","Charleston ,   South Carolina",-79.9310512,32.7764749
+"301","February 20, 2015","California","Sacramento","1417 R Street",0,4,"N/A","Sacramento ,   California",-121.4943996,38.5815719
+"302","February 17, 2015","Arkansas","Little Rock","7900 Scott Hamilton",1,3,"N/A","Little Rock ,   Arkansas",-92.2895948,34.7464809
+"303","February 15, 2015","California","Long Beach","200 block of W. 14th Street",0,5,"N/A","Long Beach ,   California",-118.1937395,33.7700504
+"304","February 9, 2015","Florida","New Port Richey","9552 Adler Street",3,1,"N/A","New Port Richey ,   Florida",-82.7192671,28.2441768
+"305","February 8, 2015","Tennessee","Maury City","251 Dupree Road",0,6,"N/A","Maury City ,   Tennessee",-89.2256244,35.814796
+"306","February 7, 2015","Georgia","Douglasville","3640 Willow Tree Circle",5,2,"N/A","Douglasville ,   Georgia",-84.7477136,33.7514966
+"307","February 6, 2015","Oklahoma","Tulsa","1219 N. Sheridan Road",1,4,"N/A","Tulsa ,   Oklahoma",-95.992775,36.1539816
+"308","February 5, 2015","Ohio","Beachwood (Warrensville Heights)","Harvard Road",3,3,"N/A","Beachwood (Warrensville Heights) ,   Ohio",-81.494323,41.4488648
+"309","February 1, 2015","New York","Syracuse","1217 West Fayette Street",0,6,"N/A","Syracuse ,   New York",-76.1474244,43.0481221
+"310","February 1, 2015","New York","New York (Manhattan)","3345 Broadway",1,4,"N/A","New York (Manhattan) ,   New York",-73.9712488,40.7830603
+"311","January 31, 2015","Georgia","Lagrange","100 block of Woodstream Trail",4,0,"N/A","Lagrange ,   Georgia",-85.0322444,33.0362218
+"312","January 28, 2015","Georgia","Dekalb County","1600 block of Panola Road",1,3,"N/A","Dekalb County ,   Georgia",-84.2278796,33.7956441
+"313","January 26, 2015","California","Stockton","1500 block of E. 9th Street",1,3,"N/A","Stockton ,   California",-121.2907796,37.9577016
+"314","January 24, 2015","New York","Arverne (Queens)","231-11 148th Avenue",4,1,"N/A","Arverne (Queens) ,   New York",-73.7977928,40.592658
+"315","January 24, 2015","Nebraska","Omaha","3402 Parker St",3,5,"N/A","Omaha ,   Nebraska",-95.9979883,41.2523634
+"316","January 23, 2015","Massachusetts","Boston","954 Parker Street",0,6,"N/A","Boston ,   Massachusetts",-71.0588801,42.3600825
+"317","January 20, 2015","Tennessee","Clarksville","321 Lansinger Lane",1,3,"N/A","Clarksville ,   Tennessee",-87.3594528,36.5297706
+"318","January 19, 2015","Texas","San Antonio","1000 block of Gibbs St.",2,5,"N/A","San Antonio ,   Texas",-98.4936282,29.4241219
+"319","January 16, 2015","California","Oakland","105th and Edes",2,2,"N/A","Oakland ,   California",-122.2711137,37.8043637
+"320","January 13, 2015","Virginia","Portsmouth","4100 block of Portsmouth Boulevard",0,5,"N/A","Portsmouth ,   Virginia",-76.2982742,36.8354258
+"321","January 13, 2015","Illinois","Rockford","700 block of Oakley Avenue",2,2,"N/A","Rockford ,   Illinois",-89.0939952,42.2711311
+"322","January 11, 2015","North Carolina","Hope Mills","1900 block of Gumberry Road",2,5,"N/A","Hope Mills ,   North Carolina",-78.9453056,34.9704419
+"323","January 11, 2015","Florida","Lakeland","7665 Chase Road",1,3,"N/A","Lakeland ,   Florida",-81.9498042,28.0394654
+"324","January 11, 2015","California","San Jose","3840 Monterey Hwy",0,5,"N/A","San Jose ,   California",-121.8863286,37.3382082
+"325","January 10, 2015","Kansas","Wichita","4859 E Harry Street",2,2,"N/A","Wichita ,   Kansas",-97.330053,37.6871761
+"326","January 9, 2015","California","San Francisco","Laguna and Page streets",4,0,"N/A","San Francisco ,   California",-122.4194155,37.7749295
+"327","January 8, 2015","Massachusetts","Boston","104 Harrishof Street",1,3,"N/A","Boston ,   Massachusetts",-71.0588801,42.3600825
+"328","January 7, 2015","Tennessee","Chattanooga","773 West Main Street",1,3,"N/A","Chattanooga ,   Tennessee",-85.3096801,35.0456297
+"329","January 6, 2015","Florida","Miami","1300 block of NW 62nd Street",1,3,"N/A","Miami ,   Florida",-80.1917902,25.7616798
+"330","January 4, 2015","Virginia","Roanoke","3634 Shenandoah Ave NW",2,4,"N/A","Roanoke ,   Virginia",-79.9414266,37.2709704
+"331","January 4, 2015","Texas","Dallas","2000 block of Ben Hur St.",3,1,"N/A","Dallas ,   Texas",-96.7969879,32.7766642
+"332","January 2, 2015","Georgia","Savannah","500 block of W. 54th Street",1,4,"N/A","Savannah ,   Georgia",-81.0998342,32.0835407
+"333","January 1, 2015","Tennessee","Memphis","Interstate 240 and Poplar Avenue",0,5,"N/A","Memphis ,   Tennessee",-90.0489801,35.1495343
