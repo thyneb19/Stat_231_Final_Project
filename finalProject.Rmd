@@ -118,12 +118,12 @@ gg1 <- ggplot() +
   geom_polygon(data = map, aes(x=long, y = lat, group = group), fill = "white", color = "blue") + 
   coord_fixed(1.3)
 
-gg1 + geom_point(data=massStanfordPresent,aes(x=Longitude,y=Latitude,size=`Number of Victim Fatalities`,col=week)) + ggtitle("Mass Shootings Reported by Media")
+gg1 + geom_point(data=massStanfordPresent,aes(x=Longitude,y=Latitude,size=`Number of Victim Fatalities`,col=week)) + ggtitle("Mass Shootings Reported by Media 2014-2016")
 
 #gg1 + geom_point(data=mass2014,aes(x=long,y=lat,size=mass2014$X..Killed,color=mass2014$week))
 #gg1 + geom_point(data=mass2015,aes(x=long,y=lat,size=mass2015$X..Killed,color=mass2015$week))
 #gg1 + geom_point(data=mass2016,aes(x=long,y=lat,size=mass2016$X..Killed,color=mass2016$week))
-gg1 + geom_point(data=massAll,aes(x=long,y=lat,size=massAll$X..Killed,color=massAll$week)) + ggtitle("Mass Shootings Reported to Police")
+gg1 + geom_point(data=massAll,aes(x=long,y=lat,size=massAll$X..Killed,color=massAll$week)) + ggtitle("Mass Shootings Reported to Police 2014-2016")
 
 ```
 
