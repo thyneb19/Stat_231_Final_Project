@@ -4,12 +4,12 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-install.packages("magrittr")
+#install.packages("magrittr")
 #install.packages("ggplot2")
 #install.packages("dplyr")
-install.packages("lubridate")
-install.packages("maps")
-install.packages("RJSONIO")
+#install.packages("lubridate")
+#install.packages("maps")
+#install.packages("RJSONIO")
 library(RJSONIO)
 library(maps)
 library(lubridate)
@@ -127,5 +127,17 @@ gg1 + geom_point(data=massAll,aes(x=long,y=lat,size=massAll$X..Killed,color=mass
 
 ```
 
+
+```{r}
+allCongressDistricts<- read.csv("Congressional Districts - Sheet1.csv")
+stanfordCongressDistricts <- read.csv("Congressional Districts Stanford - Sheet1.csv")
+
+
+inner_join()
+joinedStanford <- inner_join(stanfordCongressDistricts,massStanford, by = "City")
+View(joinedStanford)
+inner_join(joinedStanford, dataC)
+
+```
 
 
