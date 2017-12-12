@@ -172,7 +172,9 @@ gg1 + geom_point(data=joinedStanfordPresentFinal,aes(x=Longitude,y=Latitude,size
 #gg1 + geom_point(data=mass2014,aes(x=long,y=lat,size=mass2014$X..Killed,color=mass2014$week))
 #gg1 + geom_point(data=mass2015,aes(x=long,y=lat,size=mass2015$X..Killed,color=mass2015$week))
 #gg1 + geom_point(data=mass2016,aes(x=long,y=lat,size=mass2016$X..Killed,color=mass2016$week))
-gg1 + geom_point(data=joinedAllFinalv2,aes(x=long,y=lat,size=X..Killed,color=Party)) + ggtitle("Mass Shootings Kaggle 2014-2016") + scale_color_manual(values=c("#0004ff", "#ff0027"))
+joinedAllFinalv3 <- rename(joinedAllFinalv2, "Number of Victim Fatalities" = X..Killed)
+
+gg1 + geom_point(data=joinedAllFinalv3,aes(x=long,y=lat,size=`Number of Victim Fatalities`,color=Party)) + ggtitle("Mass Shootings Kaggle 2014-2016") + scale_color_manual(values=c("#0004ff", "#ff0027"))
 ```
 
 ```{r}
