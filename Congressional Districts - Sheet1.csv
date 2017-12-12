@@ -1,0 +1,325 @@
+City,State,District
+Accomack County,Virginia,2
+Akron,Ohio,11
+Albany,New York,20
+Albion,Michigan,3
+Allapattah,Florida,24
+Amarillo,Texas,13
+Anchorage,Alaska,1
+Anniston,Alabama,3
+Antioch,California,9
+Apopka,Florida,10
+Appling,Georgia,10
+Ardmore,Oklahoma,4
+Arlington,Texas,6
+Arvada,Colorado,7
+Arverne,New York,5
+Athens,Georgia,10
+Auburn,Alabama,3
+Augusta,Georgia,12
+Austin,Texas,21
+Bakersfield,California,23
+Bamberg,South Carolina,3
+Barre,Vermont,1
+Bartow County,Georgia,11
+Bastrop,Texas,10
+Baton Rouge,Louisiana,6
+Beachwood,Ohio,11
+Beaumont,Texas,14
+Bell,Florida,2
+Belle Glade,Florida,20
+Bellflower,California,38
+Bennettsville,South Carolina,7
+Benton Harbor,Michigan,6
+Berlin,Georgia,8
+Bessemer,Alabama,7
+Bethesda,Maryland,8
+Blountsville,Alabama,6
+Blythevill,Arkansas,1
+Boston,Massachusetts,8
+Bridgeport,Connecticut,4
+Bridgeton,New Jersey,2
+Brockton,Massachusetts,8
+Bronx,New York,14
+Brooklyn,New York,9
+Brooksville,Florida,11
+Brownsville,Texas,34
+Buffalo,New York,26
+Burlington,Washington,2
+Cadiz,Kentucky,1
+Calumet City,Illinois,2
+Camden,New Jersey,1
+Cape Coral,Florida,19
+Capitol Heights,Maryland,4
+Centreville,Illinois,12
+Champaign,Illinois,13
+Charleston,West Virginia,2
+Cherokee,Alabama,4
+Chester,Pennsylvania,1
+Cincinatti,Ohio,12
+Citronelle,Alabama,1
+Clarksville,Tennessee,7
+Clewiston,Florida,25
+Coachella,California,36
+Columbia,Missouri,4
+Columbia,South Carolina,6
+Columbia,Tennessee,4
+Columbus,Georgia,2
+Compton,California,44
+Corona,New York,14
+Corpus Christi,Texas,27
+Crosby,Texas,36
+Culpeper,Virginia,7
+Dadeville,Alabama,3
+Dallas,Texas,30
+Danville,Illinois,15
+Darlington County,South Carolina,7
+Davenport,Iowa,2
+Dayton,Ohio,10
+Decatur,Georgia,5
+Dekalb County,Georgia,6
+Del Valle,Texas,35
+Denver,Colorado,1
+Des Moines,Iowa,3
+District Heights,Maryland,4
+Durham,North Carolina,1
+Dyersburg,Tennessee,8
+East Liverpool,Ohio,6
+East Orange,New Jersey,10
+East Palo Alto,California,14
+East Saint Louis,Illinois,12
+Edgerton,Missouri,6
+Edinburg,Texas,15
+Egg Harbor City,New Jersey,2
+Elgin,Illinois,8
+Elizabeth,New Jersey,8
+Elkhart,Indiana,2
+Elmira,New York,23
+El Paso,Texas,16
+Enterprise,Alabama,2
+Erie,Pennsylvania,3
+Eutaw,Alabama,7
+Evanston,Illinois,9
+Evansville,Indiana,8
+Excelsior,Minnesota,3
+Exmore,Virginia,2
+Fairfield,California,3
+Fayetteville,Georgia,3
+Flint,Michigan,5
+Flour Bluff,Texas,27
+Forest,Mississippi,3
+Fort Hood,Texas,31
+Fort Lauderdale,Florida,22
+Fort Walton Beach,Florida,1
+Fort Wayne,Indiana,3
+Fort Worth,Texas,12
+Four Oaks,North Carolina,7
+Franklin,Indiana,9
+Fremont,Ohio,8
+Fresno,California,21
+Gary,Indiana,1
+Gastonia,North Carolina,10
+Geddes,South Dakota,1
+Gila Bend,Arizona,3
+Glade Spring,Virginia,9
+Goleta,California,24
+Grand Rapids,Michigan,3
+Graniteville,South Carolina,2
+Grulla,Texas,28
+Guilderland,New York,20
+Hamden,Connecticut,3
+Hamilton,Ohio,8
+Harrington,Delaware,1
+Hartford,Connecticut,1
+Highland,California,8
+Holly Hill,South Carolina,6
+Hollywood,Florida,24
+Hope Mills,North Carolina,9
+Hopewell,Virginia,4
+Horry,South Carolina,7
+Hot Springs National Park,Arkansas,4
+Houma,Louisiana,1
+Humble,Texas,2
+Huntington Beach,California,48
+Huntsville,Alabama,5
+Irvington,New Jersey,10
+Jackson,Georgia,10
+Jackson,Michigan,7
+Jackson,Mississippi,3
+Jackson,Tennessee,8
+Jersey City,New Jersey,10
+Johnstown,Pennsylvania,12
+Jonesboro,Arkansas,1
+Joplin,Missouri,7
+Kankakee,Illinois,2
+Kansas City,Missouri,5
+Kilmichael,Mississippi,2
+Kinloch,Missouri,1
+Kokomo,Indiana,4
+Lagrange,Georgia,3
+Lancaster,Texas,30
+Lexington,Kentucky,6
+Little Rock,Arkansas,2
+Livermore,California,15
+Lookout Valley,Tennessee,3
+Lovejoy,Illinois,12
+Lowell,Massachusetts,3
+Lubbock,Texas,19
+Lumberton,North Carolina,9
+Lynchburg,Virginia,6
+Macon,Georgia,2
+Manassas,Virginia,10
+Manhattan,New York,13
+Marlboro,South Carolina,7
+Marrero,Louisiana,2
+Maury City,Tennessee,8
+Mcdonough,Georgia,8
+Mead Valley,California,41
+Miami,Florida,24
+Milledgeville,Georgia,10
+Mobile,Alabama,1
+Modesto,California,10
+Moncks Corner,South Carolina,1
+Monroe,Louisiana,5
+Montgomery,Alabama,7
+Montgomery,Illinois,11
+Moreno Valley,California,41
+Moultrie,Georgia,8
+Mukilteo,Washington,2
+Murfreesboro,Tennessee,4
+Myrtle Beach,South Carolina,7
+Nashville,Tennessee,5
+New Bedford,Massachusetts,9
+New Bern,North Carolina,3
+Newburgh,New York,18
+New Haven,Connecticut,3
+Newport News,Virginia,3
+New York,New York,12
+Norcross,Georgia,7
+Norfolk,Virginia,3
+North Braddock,Pennsylvania,14
+North Charleston,South Carolina,6
+North Las Vegas,Nevada,4
+Norwalk,California,38
+Oakland,California,13
+Oak Park,Michigan,14
+Ocala,Florida,3
+Oklahoma City,Oklahoma,5
+Olive Branch,Mississippi,1
+Olympia,Washington,10
+Opa Locka,Florida,24
+Opp,Alabama,2
+Orange,New Jersey,2
+Orangeburg,South Carolina,6
+Orange County,Florida,10
+Panola County,Mississippi,2
+Panorama City,California,29
+Park Forest,Illinois,2
+Pasadena,California,29
+Pass Christian,Mississippi,4
+Paterson,New Jersey,9
+Peachtree Corners,Georgia,7
+Pelzer,South Carolina,3
+Pembroke Township,Illinois,2
+Pendleton,South Carolina,3
+Peoria,Illinois,17
+Philadelphia,Pennsylvania,1
+Piketon,Ohio,2
+Pine Bluff,Arkansas,4
+Pittsfield,Massachusetts,1
+Plainfield,New Jersey,12
+Pomona,California,35
+Pontiac,Michigan,14
+Portland,Oregon,3
+Portsmouth,Virginia,3
+Providence,Rhode Island,2
+Queens,New York,6
+Raceland,Louisiana,6
+Ravenel,South Carolina,6
+Reading,Pennsylvania,16
+Richmond,California,11
+Richmond,Indiana,6
+Riverside,California,41
+Rockford,Illinois,17
+Rocky Mount,North Carolina,2
+Roswell,New Mexico,2
+Saco,Maine,1
+Sacramento,California,7
+Saginaw,Michigan,5
+Saint Joseph,Michigan,6
+Saint Louis,Missouri,1
+Saint Martinville,Louisiana,3
+Salem,Oregon,5
+Salinas,California,20
+Salt Lake City,Utah,2
+San Antonio,Texas,35
+San Diego,California,52
+Sandusky,Ohio,9
+San Fernando,California,29
+San Francisco,California,12
+San Jose,California,19
+San Leandro,California,13
+Santa Paula,California,26
+Sarasota,Florida,16
+Savannah,Georgia,1
+Seat Pleasant,Maryland,4
+Seneca,South Carolina,3
+Shreveport,Louisiana,4
+Sisseton,South Dakota,1
+Skyway,Washington,9
+South Bend,Indiana,2
+Spanish Fork,Utah,3
+Spring,Texas,2
+Springdale,Maryland,4
+Springfield,Massachusetts,1
+Springfield,Missouri,7
+Springfield,Ohio,8
+Stamford,Connecticut,4
+Starkville,Mississippi,3
+Stockton,California,9
+Stone Mountain,Georgia,4
+Stopover,Kentucky,5
+Suffolk,Virginia,4
+Suwanee,Georgia,7
+Sylvester,Georgia,8
+Tacoma,Washington,6
+Tallulah,Louisiana,5
+Taunton,Massachusetts,4
+Temecula,California,50
+Toledo,Ohio,9
+Topeka,Kansas,2
+Townsend,Georgia,1
+Troy,New York,20
+Tyler,Texas,1
+Utica,New York,22
+Venice,Illinois,12
+Vicksburg,Mississippi,2
+Visalia,California,22
+Waco,Texas,17
+Walterboro,South Carolina,6
+Ware Neck,Virginia,1
+Warner Robins,Georgia,8
+Warren,Michigan,9
+Washington,District of Columbia,1
+Waterbury,Connecticut,5
+Waynesboro,Georgia,12
+Webster,Minnesota,1
+Webster,New York,25
+Weir,Texas,15
+Wellston,Oklahoma,3
+West Memphis,Arkansas,1
+West Palm Beach,Florida,21
+Wheat Ridge,Colorado,7
+Williamsport,Pennsylvania,10
+Willingboro,New Jersey,3
+Wilmington,California,44
+Wilmington,North Carolina,7
+Winchester,Kentucky,6
+Windsor,California,2
+Winston Salem,North Carolina,5
+Woodbridge,Virginia,11
+Woodburn,Oregon,5
+Woodland,Washington,3
+Woonsocket,Rhode Island,1
+Wrightsville,Georgia,10
+Wyandanch,New York,2
