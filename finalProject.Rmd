@@ -102,6 +102,7 @@ massStanford <- mutate(Stanford[3:nrow(Stanford),],Date = as.integer(Date))
 massStanford <- mutate(massStanford,Date = as.Date(Date,origin="1900-01-01"))
 massStanfordPresent <- filter(massStanford,as.integer(substr(massStanford$Date,1,4))>=2014)
 massStanfordPresent <- mutate(massStanfordPresent,week=week(Date))
+massStanfordPresent <- mutate(massStanfordPresent,CongressNum=ifelse(substr(Date,1,4)==2013 | substr(Date,1,4)==2014,113,114))
 ```
 
 ```{r}
