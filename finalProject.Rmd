@@ -165,6 +165,9 @@ for (i in 1:893){
 joinedAllFinal <- joinedAllFinal %>%
   mutate(Party = Party.x)
 View(joinedAllFinal)
+
+write.csv(joinedAllFinal,"massShootings2014to2016.csv")
+write.csv(joinedStanfordPresentFinal,"stanfordShootings2014to2016.csv")
 ```
 
 
