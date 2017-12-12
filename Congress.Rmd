@@ -33,7 +33,7 @@ text113 <- url113 %>% read_html() %>% html_nodes("td") %>% html_text()
 text113C <- paste(text113[93], text113[94], sep= "\n")
 
 
-dataCongress113 = data.frame("State" = 1:550 , "district" = 1:550,"party"=1:550)
+dataCongress113 = data.frame("State" = 1:550 , "District" = 1:550,"Party"=1:550, "CongressNum" = 113)
 
 congress113 <- text113C %>%
   strsplit(split = "\n") %>%
@@ -55,31 +55,31 @@ for (i in 1:50){
 
 for(i in 1:53){
   ndx <- grep(as.character(i), congress113, value=F)
-  dataCongress113$district[ndx] <- i
+  dataCongress113$District[ndx] <- i
 }
 
 repIndex <- grep("\\(R\\)", congress113, value = F)
-dataCongress113$party[repIndex] <- "Republican"
+dataCongress113$Party[repIndex] <- "Republican"
 
 demIndex <- grep("\\(D\\)", congress113, value = F)
-dataCongress113$party[demIndex] <- "Democrat"
+dataCongress113$Party[demIndex] <- "Democrat"
 
 indexAtLarge <- grep("At-large", congress113, value = F)
-dataCongress113$district[indexAtLarge] <- 1
+dataCongress113$District[indexAtLarge] <- 1
 
 View(dataCongress113)
 
 #Special Cases Due to inconsistencies in format
-dataCongress113$district[3] <- 1
-dataCongress113$district[112] <- 13
-dataCongress113$district[154] <- 2
-dataCongress113$district[203] <- 5
-dataCongress113$district[224] <- 5
-dataCongress113$district[270] <- 8
-dataCongress113$district[288] <- 1
-dataCongress113$district[346] <- 12
-dataCongress113$district[404] <- 1
-dataCongress113$district[474] <- 7
+dataCongress113$District[3] <- 1
+dataCongress113$District[112] <- 13
+dataCongress113$District[154] <- 2
+dataCongress113$District[203] <- 5
+dataCongress113$District[224] <- 5
+dataCongress113$District[270] <- 8
+dataCongress113$District[288] <- 1
+dataCongress113$District[346] <- 12
+dataCongress113$District[404] <- 1
+dataCongress113$District[474] <- 7
 
 ```
 
@@ -92,7 +92,7 @@ text114 <- url114 %>% read_html() %>% html_nodes("td") %>% html_text()
 text114C <- paste(text114[80], text114[81], sep= "\n")
 
 
-dataCongress114 = data.frame("State" = 1:550 , "district" = 1:550,"party"=1:550)
+dataCongress114 = data.frame("State" = 1:550 , "District" = 1:550,"Party"=1:550, "CongressNum" = 114)
 
 congress114 <- text114C %>%
   strsplit(split = "\n") %>%
@@ -112,32 +112,33 @@ for (i in 1:50){
 }
 
 
+
 for(i in 1:53){
   ndx <- grep(as.character(i), congress114, value=F)
-  dataCongress114$district[ndx] <- i
+  dataCongress114$District[ndx] <- i
 }
 
 repIndex <- grep("\\(R\\)", congress114, value = F)
-dataCongress114$party[repIndex] <- "Republican"
+dataCongress114$Party[repIndex] <- "Republican"
 
 demIndex <- grep("\\(D\\)", congress114, value = F)
-dataCongress114$party[demIndex] <- "Democrat"
+dataCongress114$Party[demIndex] <- "Democrat"
 
 indexAtLarge <- grep("At-large", congress114, value = F)
-dataCongress114$district[indexAtLarge] <- 1
+dataCongress114$District[indexAtLarge] <- 1
 
 
 #Special Cases Due to inconsistencies in format
-dataCongress114$district[143] <- 1
-dataCongress114$district[168] <- 18
-dataCongress114$district[169] <- 169
-dataCongress114$district[192] <- 1
-dataCongress114$district[239] <- 10
-dataCongress114$district[256] <- 1
+dataCongress114$District[143] <- 1
+dataCongress114$District[168] <- 18
+dataCongress114$District[169] <- 169
+dataCongress114$District[192] <- 1
+dataCongress114$District[239] <- 10
+dataCongress114$District[256] <- 1
 
-dataCongress114$district[316] <- 11
-dataCongress114$district[359] <- 8
-dataCongress114$district[384] <- 2
+dataCongress114$District[316] <- 11
+dataCongress114$District[359] <- 8
+dataCongress114$District[384] <- 2
 
 
 View(dataCongress114)
