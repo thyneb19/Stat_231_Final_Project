@@ -96,6 +96,7 @@ shootingFreq2016 <- mass2016 %>%
   summarize(numShootings = n())
 
 massAll <- rbind(mass2014,mass2015,mass2016)
+massAll <- mutate(massAll,CongressNum=ifelse(substr(date,1,4)==2013 | substr(date,1,4)==2014,113,114))
 
 massStanford <- mutate(Stanford[3:nrow(Stanford),],Date = as.integer(Date))
 massStanford <- mutate(massStanford,Date = as.Date(Date,origin="1900-01-01"))
