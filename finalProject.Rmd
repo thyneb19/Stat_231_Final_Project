@@ -153,11 +153,11 @@ shootingFreqStanford <- joinedStanfordPresentFinal %>%
 ```
 
 ```{r}
-ggplot(shootingFreq2014,aes(week,numShootings))+geom_bar(stat="identity")
-ggplot(shootingFreq2015,aes(week,numShootings))+geom_bar(stat="identity")
-ggplot(shootingFreq2016,aes(week,numShootings))+geom_bar(stat="identity")
-ggplot(shootingFreqAll,aes(week,numShootings))+geom_bar(stat="identity")
-ggplot(shootingFreqStanford,aes(week,numShootings))+geom_bar(stat="identity")
+ggplot(shootingFreq2014,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2014")
+ggplot(shootingFreq2015,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2015")
+ggplot(shootingFreq2016,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2016")
+ggplot(shootingFreqAll,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2014-2016")
+ggplot(shootingFreqStanford,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Stanford 2014-2016")
 ```
 
 ```{r}
