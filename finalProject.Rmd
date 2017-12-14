@@ -185,4 +185,3 @@ missedByStanford <- anti_join(joinedAllFinal,joinedStanfordPresentFinal,by=c("Ci
 
 missed <- missedByStanford %>% group_by(Party) %>% summarize(num=n())
 ```
-
