@@ -4,7 +4,7 @@ output: html_document
 ---
 
 Abstract
-
+We will be examining 2 different data sets covering mass shootings in America; the Stanford Mass Shootings in America and the Gun Violence Archive data set. According to their data descriptions, Stanford collected their data from online reports while the Gun Violence Archive gathered theirs from online sources, law enforcement, government, and commercial sources. We want to examine how these data sets differ in mass shooting reporting to reveal any possible biases in the media’s reporting of such shootings.
 
 
 
