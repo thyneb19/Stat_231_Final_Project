@@ -192,11 +192,11 @@ View(joinedAllFinal)
 
 includedByStanford <- inner_join(joinedAllFinal,joinedStanfordPresentFinal,by=c("City.Or.County"="City","State","week"))
 
-includedByStanford <- includedByStanford %>% mutate("IncludedStan" = "Yes")
+includedByStanford <- includedByStanford %>% mutate("IncludedStan" = 1)
 includedByStanford
 
 #Version 3 has better naming
-joinedAllFinalInclusionTemp <- joinedAllFinalv3 %>% mutate("IncludedNo" = "No")
+joinedAllFinalInclusionTemp <- joinedAllFinalv3 %>% mutate("IncludedNo" = 0)
 joinedAllFinalInclusionTemp
 
 #Used to determine if it was included (Not a useful data frame)
@@ -205,14 +205,53 @@ joinedAllFinalInclusion
 
 for (i in 1:879){
   if (!is.na(joinedAllFinalInclusion$IncludedStan[i])) {
-    joinedAllFinalInclusionTemp$IncludedNo[i] <- "Yes"
+    joinedAllFinalInclusionTemp$IncludedNo[i] <- 1
   }
 }
 
 #joinedAllFinalInclusionTemp has the new column of it was included
   joinedAllFinalInclusionTemp
+  
 
 ```
+
+```{r}
+#creating the log model
+
+#first split into train and test
+n <- nrow(joinedAllFinalInclusionTemp)
+set.seed(100)
+shooting_index <- sample(1:n, round(n*.40))
+train <- joinedAllFinalInclusionTemp[shooting_index,]
+test <- joinedAllFinalInclusionTemp[-shooting_index,]
+train
+test
+
+#Learn Log model using train set
+
+mod <- glm( IncludedNo ~ as.factor(Party) + week + X..Injured + `Number of Victim Fatalities`, data=train)
+
+#make predictions
+test$p_hat <- predict(mod, test, type='response')
+
+#compare
+library(pROC)
+test
+roc_obj <- roc(test$IncludedNo, test$p_hat)
+
+plot(roc_obj)
+
+auc(roc_obj)
+
+```
+
+
+
+
+
+
+
+
 
 
 
