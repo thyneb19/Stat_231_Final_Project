@@ -10,6 +10,8 @@ output: html_document
 #install.packages("lubridate")
 #install.packages("maps")
 #install.packages("RJSONIO")
+install.packages("pROC")
+library(pROC)
 library(RJSONIO)
 library(maps)
 library(lubridate)
@@ -235,14 +237,12 @@ mod <- glm( IncludedNo ~ as.factor(Party) + week + X..Injured + `Number of Victi
 test$p_hat <- predict(mod, test, type='response')
 
 #compare
-library(pROC)
 test
 roc_obj <- roc(test$IncludedNo, test$p_hat)
 
 plot(roc_obj)
 
 auc(roc_obj)
-
 ```
 
 
