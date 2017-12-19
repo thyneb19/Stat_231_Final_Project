@@ -1,6 +1,7 @@
 
 ---
-title: "WriteUp"
+title: "Media Bias in Mass Shooting Coverage"
+author: "Thyne Boonmark, Justin Chen"
 output:
   pdf_document: default
   html_document: default
@@ -25,10 +26,10 @@ library(rvest)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Abstract
+**Abstract**
 Mass shootings and media reporting have been widely discussed topics recently. Media outlets have been accused of using shooting strategies to push some sort of agenda, and this is the topic that we want to explore. When we compared shootings reported by online media outlets to a more comprehensive dataset collected from law enforcement and government records, we found that there were biases in media reporting from political affiliation. Either mass shootings in democratic congressional districts were underreported or those in republican congressional districts were overreported. We also found a bias in media reporting based on time of year. Shootings in the beginning of the year appear to be reported more often than shootings near the end of the year. After observing these possible symptoms of reporting bias, we made a logistic regression model to predict whether or not a mass shooting would be reported by the media. While our model is not perfect, it has an AUC value of 0.7611 which means that the variables we chose are pretty strong predictors.
 
-Introduction
+**Introduction**
 Five years ago, on December 14, 2012, Adam Lanza killed 20 school children at the Sandy Hook Elementary School. This horrific mass shooting was covered by the mass media, informing all of American of the shooting. Recently, on October 1, 2017, there was another mass shooting, resulting in 58 deaths and 546 injured. Mass shootings like these have become more common and many are widely covered by the media. However, what about shootings that do not get any media publicity at all? What factors make a shooting more likely to be reported?
 
 The main question we wanted to answer was: “How does the political affiliation of a town affect whether or not a mass shooting there is reported in the media?”. The topic of “fake news” and media bias in reporting has been getting alot of discussion, so we wanted to investigate if there exists a tendency for media outlets to report on shootings in a biased way. To perform this analysis we needed two types of datasets. One would have to be a comprehensive list of mass shootings; the other would have to be a list of media reported mass shootings. 
@@ -41,8 +42,6 @@ mass_shootings_2016 <- read.csv("./Mass_shootings_2016_Locations.csv")
 
 ```
 Afterwards, we would compare which shootings were reported based on their location’s political party affiliation. To determine a town’s political party, we would map a location to its congressional district. 
-
-
 Some of the code we used to find to find the longitude and latitude values of a city, state.
 
 ```{r}
@@ -213,7 +212,6 @@ massStanfordPresent <- mutate(massStanfordPresent,CongressNum=ifelse(substr(Date
 ```
 
 
-
 ```{r, echo=FALSE, warning=FALSE}
 #read in congressional district data for Stanford dataset locations and GVA dataset locations
 #combine the two datasets into one congressional district dataset
@@ -260,9 +258,6 @@ joinedAllFinalv3 <- rename(joinedAllFinalv2, "Number of Victim Fatalities" = X..
 ```
 
 
-
-
-
 Here is some of the code we used for creating a density plot
 ```{r}
 
@@ -285,8 +280,8 @@ shootingFreqAll <- joinedAllFinal %>%
 shootingFreqStanford <- joinedStanfordPresentFinal %>%
   group_by(week) %>%
   summarize(numShootings = n())
-
 ```
+
 
 ```{r, echo=FALSE, warning=FALSE}
 
@@ -360,7 +355,7 @@ auc(roc_obj)
 
 ```
 
-Data
+**Data**
 We worked with two datasets covering mass shootings, the Mass Shootings in America dataset collected by Stanford and a Kaggle dataset collected by the Gun Violence Archive. Both of these datasets contain date and location information about their shootings, as well as information on the number of victims killed and the number of victims injured. Date was given in Year/Month/Day format, and location was given both as town and state name (ex: Austin, Texas). 
 
 We later added more variables for latitude and longitude, week, congressional district, and congressional district’s political affiliation. Latitude and longitude data was collected by using the google maps API to convert our location data into latitude and longitude coordinate pairs. We used R’s lubridate package to convert the dates we were given into R date objects and then converted those into weeks. Congressional district information was collected by searching up a given town’s district on govtrack.us and Congressional district’s political affiliation was collected by scraping data from wikipedia. 
@@ -403,7 +398,7 @@ joinedAllFinalv2 <- filter(joinedAllFinal, Party == "Democrat" | Party == "Repub
 
 ```
 
-Diagonostics
+**Diagonostics**
 
 Our initial logistic regression model is based on political affiliation of the shooting location, week when the shooting occurred, number of victims killed, and number of victims injured had an AUC of .7375. We then tried a second model using only political affiliation and week. This model had an AUC of .7611 on the test set. An AUC of .5 means random predictive power, and an AUC of 1 means perfect predictive power. In this case, an AUC of 0.5 would mean that we could not predict whether a mass shooting is covered. 
 
@@ -462,24 +457,46 @@ From the Kaggle Map, we can see that there are far more blue dots than red dots,
 From the Stanford Map, there are significantly fewer dots in total than in the Kaggle Map. However, there appears to be a roughly similar proportion of red to blue dots.
 
 
+```{r,echo=FALSE,warning=FALSE}
+#create ggplot maps to show mass shooting locations
+
+#get USA state map dataset, does not include Hawaii and Alaska 
+map <- map_data("state")
+
+#create USA outline with state lines
+gg1 <- ggplot() + 
+  geom_polygon(data = map, aes(x=long, y = lat, group = group), fill = "white", color = "black") + 
+  coord_fixed(1.3)
+```
+```{r,echo=FALSE,warning=FALSE}
+gg1 + geom_point(data=joinedAllFinalv3,aes(x=long,y=lat,size=`Number of Victim Fatalities`,color=Party)) + ggtitle("Mass Shootings Kaggle 2014-2016") + scale_color_manual(values=c("#0004ff", "#ff0027"))
+```
+```{r,echo=FALSE,warning=FALSE}
+#plot Stanford mass shooting data, color represents location political affiliation, size of a dot represents number of victims killed
+gg1 + geom_point(data=joinedStanfordPresentFinal,aes(x=Longitude,y=Latitude,size=`Number of Victim Fatalities`,col=Party))+ ggtitle("Mass Shootings Stanford 2014-2016") + scale_color_manual(values=c("#0004ff", "#ff0027"))
+```
 
 
 From the Kaggle Density plots, we can see that the distribution of shootings over the weeks of the year is approximately unimodal and approximately symmetric. Most shootings appear to consistently occur during the months of may, june, and july. Also to be noted is the scales on the axis, often there are more shootings than days in the week.
 However, when we look at the distribution of shootings throughout a year for the Stanford data, we see that it is noticeably skewed right. Here, mass shootings are more commonly reported in the months of January and February. The number of shootings per week is also far fewer. 
 
 
+```{r,echo=FALSE}
+#plot our mass shooting frequency graphs
+ggplot(shootingFreq2014,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2014")
+ggplot(shootingFreq2015,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2015")
+ggplot(shootingFreq2016,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2016")
+ggplot(shootingFreqAll,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2014-2016")
+ggplot(shootingFreqStanford,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Stanford 2014-2016")
+```
 
 
-
-
-Results
+**Results**
 What we see is that the ratio of shootings in Republican to Democratic districts differs between the Stanford and Gun Violence Archive datasets. For the GVA data, the ratio we found was 0.433 while in the Stanford data, the ratio we found was 0.842. While we do not have enough information to tell us whether media sources overreport shootings in Republican districts or under report shootings in Democratic districts, we do have evidence that some sort of bias exists. 
 
 When we investigate when a shooting occurs during a year, we find more evidence suggesting a media reporting bias. For the years 2014 through 2016 in the GVA dataset, we can see that the distribution of shootings over the weeks of the year is approximately unimodal and approximately symmetric. However, when we look at the distribution of shootings throughout a year for the Stanford data, we see that it is noticeably skewed right. This difference suggests that media outlets tend to report more on shootings that occur near the start of a year and then drop off, even though shootings tend to mostly occur around the middle of a year. What this also does is confirm our suspicion of a “media fatigue” later in the year. Shootings are often reported by news outlets at the start of the year, but this reporting dies down as time goes on.
 
 As discussed in the Diagnostics section, our initial logistic regression model is based on political affiliation of the shooting location, week when the shooting occurred, number of victims killed, and number of victims injured had an AUC of .7375. We then tried a second model using only political affiliation and week. This model had an AUC of .7611 on the test set. Since both of our models have a relatively high value, we appear to have some ability to predict whether or not a shooting would be reported by the media. We were surprised to see our model with only political and week performed better than our other model since we expected the severity of a shooting (number of victims killed and injured) to be a good predictor of the shooting receiving media coverage. 
 
-Conclusion
-
-
-
+**Conclusion**
+We found evidence that suggests that media outlets have some bias in their reporting of mass shootings. At this time; however, we are not yet able to tell if media sources over report shootings in Republican districts or under report shootings in Democratic districts. We see some evidence of media fatigue from the differences in the density plots of shootings throughout the year. While we cannot definitively say what explains these observations, the plots do display some sort of bias. Using the logistic model we created, we have some predictive power in determining whether or not a shooting is reported by the media. The model used party affiliation and week as variables, and had a AUC of .7611. Since this is significantly greater than 0.5 (random), party affiliation and week definitely played a part. We would like to improve our model, but this would require more data on mass shootings which we just do not have. Our observations are also limited to the near present (2014-2016) since the data we use comes from these three years. There is also an issue in how our two datasets define a mass shooting. Stanford defines it as three or more victims, while the GVA defines it as four or more victims. Furthermore, we do not have any way to predict when and where a shooting might occur. In the future, we would like to further explore the media’s report of shootings. How do different news outlets report on mass shootings? Do these outlets’ reporting differ depending on their political leaning?
