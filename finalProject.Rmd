@@ -10,7 +10,7 @@ output: html_document
 #install.packages("lubridate")
 #install.packages("maps")
 #install.packages("RJSONIO")
-install.packages("pROC")
+#install.packages("pROC")
 library(pROC)
 library(RJSONIO)
 library(maps)
@@ -230,19 +230,29 @@ train
 test
 
 #Learn Log model using train set
-
+#First mod has 2 variables
 mod <- glm( IncludedNo ~ as.factor(Party) + week , data=train)
+#Second mod has 4 variables
+
+mod2 <- glm( IncludedNo ~ as.factor(Party) + week + X..Injured + `Number of Victim Fatalities`, data=train)
+
 
 #make predictions
 test$p_hat <- predict(mod, test, type='response')
+test$p_hat2 <- predict(mod2, test, type = 'response')
 
 #compare
+
 test
 roc_obj <- roc(test$IncludedNo, test$p_hat)
+roc_obj2 <- roc(test$IncludedNo, test$p_hat2)
 
 plot(roc_obj)
+plot(roc_obj2)
 
 auc(roc_obj)
+auc(roc_obj2)
+
 ```
 
 
