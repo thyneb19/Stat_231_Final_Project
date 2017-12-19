@@ -18,6 +18,7 @@ library(lubridate)
 library(dplyr)
 library(magrittr)
 library(ggplot2)
+library(rvest)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -256,8 +257,6 @@ set.seed(100)
 shooting_index <- sample(1:n, round(n*.40))
 train <- joinedAllFinalInclusionTemp[shooting_index,]
 test <- joinedAllFinalInclusionTemp[-shooting_index,]
-train
-test
 
 #Learn Log model using train set
 #First mod has 2 variables
@@ -273,7 +272,6 @@ test$p_hat2 <- predict(mod2, test, type = 'response')
 
 #compare
 
-test
 roc_obj <- roc(test$IncludedNo, test$p_hat)
 roc_obj2 <- roc(test$IncludedNo, test$p_hat2)
 
