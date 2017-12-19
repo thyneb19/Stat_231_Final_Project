@@ -258,6 +258,7 @@ shooting_index <- sample(1:n, round(n*.40))
 train <- joinedAllFinalInclusionTemp[shooting_index,]
 test <- joinedAllFinalInclusionTemp[-shooting_index,]
 
+
 #Learn Log model using train set
 #First mod has 2 variables
 mod <- glm( IncludedNo ~ as.factor(Party) + week , data=train)

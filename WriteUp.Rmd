@@ -214,7 +214,7 @@ massStanfordPresent <- mutate(massStanfordPresent,CongressNum=ifelse(substr(Date
 
 
 
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 #read in congressional district data for Stanford dataset locations and GVA dataset locations
 #combine the two datasets into one congressional district dataset
 stanfordCongressDistricts <- read.csv("Congressional Districts Stanford - Sheet1.csv")
@@ -288,7 +288,7 @@ shootingFreqStanford <- joinedStanfordPresentFinal %>%
 
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 
 stanfordParty <- joinedStanfordPresentFinal %>% group_by(Party) %>% summarize(num=n())
 allParty <- joinedAllFinal %>% group_by(Party) %>% summarize(num=n())
@@ -333,7 +333,7 @@ After including and these variables, we wanted to predict whether or not a mass 
 
 Here is some of the code we used for creating a logistic regression model
 
-```{r}
+```{r, warning=FALSE}
 
 #creating the log model
 
@@ -368,7 +368,7 @@ We later added more variables for latitude and longitude, week, congressional di
 Here is the code we used to join the dataframes together.
 
 
-```{r}
+```{r, warning=FALSE}
 stanfordCongressDistricts <- read.csv("Congressional Districts Stanford - Sheet1.csv")
 allCongressDistricts<- read.csv("Congressional Districts - Sheet1.csv")
 totalCongressDistricts <- rbind(stanfordCongressDistricts, allCongressDistricts)
@@ -407,7 +407,7 @@ Diagonostics
 
 Our initial logistic regression model is based on political affiliation of the shooting location, week when the shooting occurred, number of victims killed, and number of victims injured had an AUC of .7375. We then tried a second model using only political affiliation and week. This model had an AUC of .7611 on the test set. An AUC of .5 means random predictive power, and an AUC of 1 means perfect predictive power. In this case, an AUC of 0.5 would mean that we could not predict whether a mass shooting is covered. 
 
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 #create dataset that includes shootings not reported by online media sources(Stanford data set)
 
 #we want to find the proportion of shootings in Democratic and Republican districts for both datasets.
@@ -422,7 +422,7 @@ missed <- missedByStanford %>% group_by(Party) %>% summarize(num=n())
 ```
 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning=FALSE}
 #creating the log model
 
 #first split into train and test
