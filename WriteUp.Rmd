@@ -265,6 +265,7 @@ joinedAllFinalv3 <- rename(joinedAllFinalv2, "Number of Victim Fatalities" = X..
 
 Here is some of the code we used for creating a density plot
 ```{r}
+
 shootingFreq2014 <- mass2014 %>%
   group_by(week) %>%
   summarize(numShootings = n())
@@ -288,20 +289,33 @@ shootingFreqStanford <- joinedStanfordPresentFinal %>%
 ```
 
 ```{r, echo=FALSE}
+
+stanfordParty <- joinedStanfordPresentFinal %>% group_by(Party) %>% summarize(num=n())
+allParty <- joinedAllFinal %>% group_by(Party) %>% summarize(num=n())
+
+#shootings not reported by online media sources
+missedByStanford <- anti_join(joinedAllFinal,joinedStanfordPresentFinal,by=c("City.Or.County"="City","State","week"))
+
+#number of shootings in Democratic and Republican districts. Data from missedByStanford
+missed <- missedByStanford %>% group_by(Party) %>% summarize(num=n())
 #Generate new column for Logistic regression on Kaggle
 
 includedByStanford <- inner_join(joinedAllFinal,joinedStanfordPresentFinal,by=c("City.Or.County"="City","State","week"))
 
 includedByStanford <- includedByStanford %>% mutate("IncludedStan" = 1)
-includedByStanford
+
 
 #Version 3 has better naming
 joinedAllFinalInclusionTemp <- joinedAllFinalv3 %>% mutate("IncludedNo" = 0)
-joinedAllFinalInclusionTemp
+
+
 
 #Used to determine if it was included (Not a useful data frame)
 joinedAllFinalInclusion <-  left_join(joinedAllFinalInclusionTemp,includedByStanford,by=c("City.Or.County","State","week"))
-joinedAllFinalInclusion
+
+
+
+
 
 for (i in 1:879){
   if (!is.na(joinedAllFinalInclusion$IncludedStan[i])) {
@@ -313,14 +327,7 @@ for (i in 1:879){
 #joinedAllFinalInclusionTemp
   
 
-stanfordParty <- joinedStanfordPresentFinal %>% group_by(Party) %>% summarize(num=n())
-allParty <- joinedAllFinal %>% group_by(Party) %>% summarize(num=n())
 
-#shootings not reported by online media sources
-missedByStanford <- anti_join(joinedAllFinal,joinedStanfordPresentFinal,by=c("City.Or.County"="City","State","week"))
-
-#number of shootings in Democratic and Republican districts. Data from missedByStanford
-missed <- missedByStanford %>% group_by(Party) %>% summarize(num=n())
 ```
 After including and these variables, we wanted to predict whether or not a mass shooting would be reported by the media. To do this, we used a logistic regression model as our predictive model. We split the data into training and test sets, then used political affiliation of the town and week of the year the shooting happened in as variables. 
 
@@ -336,8 +343,6 @@ set.seed(100)
 shooting_index <- sample(1:n, round(n*.40))
 train <- joinedAllFinalInclusionTemp[shooting_index,]
 test <- joinedAllFinalInclusionTemp[-shooting_index,]
-train
-test
 
 #Learn Log model using train set
 
@@ -347,7 +352,6 @@ mod <- glm( IncludedNo ~ as.factor(Party) + week , data=train)
 test$p_hat <- predict(mod, test, type='response')
 
 #compare
-test
 roc_obj <- roc(test$IncludedNo, test$p_hat)
 
 plot(roc_obj)
@@ -397,8 +401,6 @@ joinedAllFinal <- joinedAllFinal %>%
 
 joinedAllFinalv2 <- filter(joinedAllFinal, Party == "Democrat" | Party == "Republican")
 
-write.csv(joinedAllFinal,"massShootings2014to2016.csv")
-write.csv(joinedStanfordPresentFinal,"stanfordShootings2014to2016.csv")
 ```
 
 Diagonostics
