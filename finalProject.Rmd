@@ -63,6 +63,7 @@ mass2016 <- mutate(mass_shootings_2016,date = mdy(Incident.Date))
 mass2016 <- mutate(mass2016,week = week(date))
 
 #used to create latitude and longitude data using town address data
+#do not need to run these anymore since we have since created csv files containing this data
 #mass2014 <- mutate(mass2014,location = paste(City.Or.County,","," ",State))
 #mass2015 <- mutate(mass2015,location = paste(City.Or.County,","," ",State))
 #mass2016 <- mutate(mass2016,location = paste(City.Or.County,","," ",State))
@@ -74,16 +75,27 @@ mass2016 <- mutate(mass2016,week = week(date))
 
 ```{r}
 #goes through dataset and converts an address into a latitude and longitude
-#for(i in 1:20){
+#do not need to run these anymore since we have since created csv files containing this data
+#for(i in 1:nrow(mass2015loc)){
+#  mass2015loc$long[i] <- geocodeAdddress(mass2015loc$location[i],0)
+#  mass2015loc$lat[i] <- geocodeAdddress(mass2015loc$location[i],1)
+#}
+#for(i in 1:nrow(mass2014loc)){
+#  mass2015loc$long[i] <- geocodeAdddress(mass2015loc$location[i],0)
+#  mass2015loc$lat[i] <- geocodeAdddress(mass2015loc$location[i],1)
+#}
+#for(i in 1:nrow(mass2016loc)){
 #  mass2015loc$long[i] <- geocodeAdddress(mass2015loc$location[i],0)
 #  mass2015loc$lat[i] <- geocodeAdddress(mass2015loc$location[i],1)
 #}
 ```
 
 ```{r}
+#create a dataset that contains all 2014-2016 data from Gun Violence Archive datasets
 massAll <- rbind(mass2014,mass2015,mass2016)
 massAll <- mutate(massAll,CongressNum=ifelse(substr(date,1,4)==2013 | substr(date,1,4)==2014,113,114))
 
+#create a dataset that contains all 2014-2016 data from the Stanford Mass Shooting Dataset
 massStanford <- mutate(Stanford[3:nrow(Stanford),],Date = as.integer(Date))
 massStanford <- mutate(massStanford,Date = as.Date(Date,origin="1900-01-01"))
 massStanfordPresent <- filter(massStanford,as.integer(substr(massStanford$Date,1,4))>=2014)
@@ -92,15 +104,18 @@ massStanfordPresent <- mutate(massStanfordPresent,CongressNum=ifelse(substr(Date
 ```
 
 ```{r}
+#read in congressional district data for Stanford dataset locations and GVA dataset locations
+#combine the two datasets into one congressional district dataset
 stanfordCongressDistricts <- read.csv("Congressional Districts Stanford - Sheet1.csv")
 allCongressDistricts<- read.csv("Congressional Districts - Sheet1.csv")
 totalCongressDistricts <- rbind(stanfordCongressDistricts, allCongressDistricts)
 
+#join congressional district data with Stanford mass shooting dataset
 joinedStanford <- inner_join(massStanfordPresent, totalCongressDistricts, by = c("City","State"))
-#USED INNERJOIN CUZ TYPOS WILL FIX LEL
 joinedStanfordPresent <- left_join(joinedStanford, dataCongress113, by = c("District", "State", "CongressNum"))
 joinedStanfordPresentFinal <- left_join(joinedStanfordPresent, dataCongress114, by = c("District", "State", "CongressNum"))
 
+#joining created two different variables Party.x and Party.y. We want to merge these into one variable Party
 for (i in 1:140){
   if (is.na(joinedStanfordPresentFinal$Party.x[i])) {
     joinedStanfordPresentFinal$Party.x[i] <- joinedStanfordPresentFinal$Party.y[i]
@@ -109,13 +124,13 @@ for (i in 1:140){
 
 joinedStanfordPresentFinal <- joinedStanfordPresentFinal %>%
   mutate(Party = Party.x)
-View(joinedStanfordPresentFinal)
 
-
+#join congressional district data with GVA mass shooting dataset
 joinedAll <- inner_join(massAll, totalCongressDistricts, by = c("City.Or.County" = "City", "State"))
-#SAME AS ABOVE
 joinedAllTemp <- left_join(joinedAll, dataCongress113, by = c("District", "State", "CongressNum"))
 joinedAllFinal <- left_join(joinedAllTemp, dataCongress114, by = c("District", "State", "CongressNum"))
+
+#joining created two different variables Party.x and Party.y. We want to merge these into one variable Party
 for (i in 1:893){
   if (is.na(joinedAllFinal$Party.x[i])) {
     joinedAllFinal$Party.x[i] <- joinedAllFinal$Party.y[i]
@@ -124,15 +139,17 @@ for (i in 1:893){
 
 joinedAllFinal <- joinedAllFinal %>%
   mutate(Party = Party.x)
-View(joinedAllFinal)
 
+#some issues when joining, a couple rows had Party as a numeric value
 joinedAllFinalv2 <- filter(joinedAllFinal, Party == "Democrat" | Party == "Republican")
 
-write.csv(joinedAllFinal,"massShootings2014to2016.csv")
-write.csv(joinedStanfordPresentFinal,"stanfordShootings2014to2016.csv")
+#writes these datasets to csv files
+#write.csv(joinedAllFinal,"massShootings2014to2016.csv")
+#write.csv(joinedStanfordPresentFinal,"stanfordShootings2014to2016.csv")
 ```
 
 ```{r}
+#creating datasets with frequency of mass shootings per week throughout the year for our datasets
 shootingFreq2014 <- mass2014 %>%
   group_by(week) %>%
   summarize(numShootings = n())
@@ -155,6 +172,7 @@ shootingFreqStanford <- joinedStanfordPresentFinal %>%
 ```
 
 ```{r}
+#plot our mass shooting frequency graphs
 ggplot(shootingFreq2014,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2014")
 ggplot(shootingFreq2015,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2015")
 ggplot(shootingFreq2016,aes(week,numShootings))+geom_bar(stat="identity")+ ggtitle("Shootings Throughout the Year Kaggle 2016")
@@ -163,28 +181,40 @@ ggplot(shootingFreqStanford,aes(week,numShootings))+geom_bar(stat="identity")+ g
 ```
 
 ```{r}
+#create ggplot maps to show mass shooting locations
+
+#get USA state map dataset, does not include Hawaii and Alaska 
 map <- map_data("state")
 
+#create USA outline with state lines
 gg1 <- ggplot() + 
   geom_polygon(data = map, aes(x=long, y = lat, group = group), fill = "white", color = "black") + 
   coord_fixed(1.3)
 
+#plot Stanford mass shooting data, color represents location political affiliation, size of a dot represents number of victims killed
 gg1 + geom_point(data=joinedStanfordPresentFinal,aes(x=Longitude,y=Latitude,size=`Number of Victim Fatalities`,col=Party)) + scale_color_manual(values=c("#0004ff", "#ff0027"))
 
-#gg1 + geom_point(data=mass2014,aes(x=long,y=lat,size=mass2014$X..Killed,color=mass2014$week))
-#gg1 + geom_point(data=mass2015,aes(x=long,y=lat,size=mass2015$X..Killed,color=mass2015$week))
-#gg1 + geom_point(data=mass2016,aes(x=long,y=lat,size=mass2016$X..Killed,color=mass2016$week))
-joinedAllFinalv3 <- rename(joinedAllFinalv2, "Number of Victim Fatalities" = X..Killed)
+#plot GVA shooting data for 2014, 2015, and 2016. color represents week of the year, size of a dot represents number of victims killed
+gg1 + geom_point(data=mass2014,aes(x=long,y=lat,size=mass2014$X..Killed,color=mass2014$week))
+gg1 + geom_point(data=mass2015,aes(x=long,y=lat,size=mass2015$X..Killed,color=mass2015$week))
+gg1 + geom_point(data=mass2016,aes(x=long,y=lat,size=mass2016$X..Killed,color=mass2016$week))
 
+#plot GVA mass shooting data, color represents location political affiliation, size of a dot represents number of victims killed
+joinedAllFinalv3 <- rename(joinedAllFinalv2, "Number of Victim Fatalities" = X..Killed)
 gg1 + geom_point(data=joinedAllFinalv3,aes(x=long,y=lat,size=`Number of Victim Fatalities`,color=Party)) + ggtitle("Mass Shootings Kaggle 2014-2016") + scale_color_manual(values=c("#0004ff", "#ff0027"))
 ```
 
 ```{r}
+#create dataset that includes shootings not reported by online media sources(Stanford data set)
+
+#we want to find the proportion of shootings in Democratic and Republican districts for both datasets.
 stanfordParty <- joinedStanfordPresentFinal %>% group_by(Party) %>% summarize(num=n())
 allParty <- joinedAllFinal %>% group_by(Party) %>% summarize(num=n())
 
+#shootings not reported by online media sources
 missedByStanford <- anti_join(joinedAllFinal,joinedStanfordPresentFinal,by=c("City.Or.County"="City","State","week"))
 
+#number of shootings in Democratic and Republican districts. Data from missedByStanford
 missed <- missedByStanford %>% group_by(Party) %>% summarize(num=n())
 ```
 
