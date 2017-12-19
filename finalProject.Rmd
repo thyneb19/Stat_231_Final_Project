@@ -231,7 +231,7 @@ test
 
 #Learn Log model using train set
 
-mod <- glm( IncludedNo ~ as.factor(Party) + week + X..Injured + `Number of Victim Fatalities`, data=train)
+mod <- glm( IncludedNo ~ as.factor(Party) + week , data=train)
 
 #make predictions
 test$p_hat <- predict(mod, test, type='response')
