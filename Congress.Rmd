@@ -8,14 +8,9 @@ library(rvest)
 library(RCurl)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r}
-
+#Helper method for cleaning
 removeEdit <- function(stateText) {
   stateText <- substr(stateText,1, nchar(stateText) - 6)
 }
@@ -28,46 +23,44 @@ removeEdit <- function(stateText) {
 url113 <- "https://en.wikipedia.org/wiki/113th_United_States_Congress"
 
 text113 <- url113 %>% read_html() %>% html_nodes("td") %>% html_text()
-
-
 text113C <- paste(text113[93], text113[94], sep= "\n")
 
-
+#Initialize dataframe
 dataCongress113 = data.frame("State" = 1:550 , "District" = 1:550,"Party"=1:550, "CongressNum" = 113)
 
 congress113 <- text113C %>%
   strsplit(split = "\n") %>%
   magrittr::extract2(1)
 
-
+#Cleaning
 statesWEdit113<- grep("edit", congress113, value = TRUE)
 statesWEditLineNum113<- grep("edit", congress113, value = FALSE)
 
-
 statesWOEdit113 <- lapply(statesWEdit113, FUN = removeEdit)
 
+#Begin filling data frame with states
 for (i in 1:50){
   beg <- statesWEditLineNum113[i] + 1 
   end <- statesWEditLineNum113[i+1] - 1 
   dataCongress113$State[beg:end] <- statesWOEdit113[[i]]
 }
 
-
+#Congressional districts for each state
 for(i in 1:53){
   ndx <- grep(as.character(i), congress113, value=F)
   dataCongress113$District[ndx] <- i
 }
 
+#Giving a Party value for the indexes
 repIndex <- grep("\\(R\\)", congress113, value = F)
 dataCongress113$Party[repIndex] <- "Republican"
 
 demIndex <- grep("\\(D\\)", congress113, value = F)
 dataCongress113$Party[demIndex] <- "Democrat"
 
+#Only one district for at large
 indexAtLarge <- grep("At-large", congress113, value = F)
 dataCongress113$District[indexAtLarge] <- 1
-
-View(dataCongress113)
 
 #Special Cases Due to inconsistencies in format
 dataCongress113$District[3] <- 1
@@ -87,43 +80,43 @@ dataCongress113$District[474] <- 7
 url114 <- "https://en.wikipedia.org/wiki/114th_United_States_Congress"
 
 text114 <- url114 %>% read_html() %>% html_nodes("td") %>% html_text()
-
-
 text114C <- paste(text114[80], text114[81], sep= "\n")
 
-
+#Initializing the data frame
 dataCongress114 = data.frame("State" = 1:550 , "District" = 1:550,"Party"=1:550, "CongressNum" = 114)
 
 congress114 <- text114C %>%
   strsplit(split = "\n") %>%
   magrittr::extract2(1)
 
-
+#Cleaning
 statesWEdit114<- grep("edit", congress114, value = TRUE)
 statesWEditLineNum114<- grep("edit", congress114, value = FALSE)
 
-
 statesWOEdit114 <- lapply(statesWEdit113, FUN = removeEdit)
 
+#Begin filling up data frame with states
 for (i in 1:50){
   beg <- statesWEditLineNum114[i] + 1 
   end <- statesWEditLineNum114[i+1] - 1 
   dataCongress114$State[beg:end] <- statesWOEdit114[[i]]
 }
 
-
+#Congressional districts for each state
 
 for(i in 1:53){
   ndx <- grep(as.character(i), congress114, value=F)
   dataCongress114$District[ndx] <- i
 }
 
+#Giving a Party value for the indexes
 repIndex <- grep("\\(R\\)", congress114, value = F)
 dataCongress114$Party[repIndex] <- "Republican"
 
 demIndex <- grep("\\(D\\)", congress114, value = F)
 dataCongress114$Party[demIndex] <- "Democrat"
 
+#Only one district for at large
 indexAtLarge <- grep("At-large", congress114, value = F)
 dataCongress114$District[indexAtLarge] <- 1
 
@@ -140,9 +133,5 @@ dataCongress114$District[316] <- 11
 dataCongress114$District[359] <- 8
 dataCongress114$District[384] <- 2
 
-
-View(dataCongress114)
 ```
-Alabama 1 R
-Alabama 2 R
-Alaska 1 R
+
